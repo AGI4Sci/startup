@@ -500,10 +500,18 @@ h3 {
 .layer-index {
   display: grid;
   place-items: center;
-  color: #fff;
+  color: var(--cyan);
   font-weight: 800;
-  background: var(--ink);
+  background: var(--section-blue-soft);
+  border-right: 1px solid var(--blue-line);
 }
+
+.layer:nth-child(1) .layer-index { color: var(--green); }
+.layer:nth-child(2) .layer-index { color: var(--cyan); }
+.layer:nth-child(3) .layer-index { color: var(--coral); }
+.layer:nth-child(4) .layer-index { color: var(--gold); }
+.layer:nth-child(5) .layer-index { color: #6d7c3f; }
+.layer:nth-child(6) .layer-index { color: #676a70; }
 
 .layer-body {
   padding: 14px 16px;
