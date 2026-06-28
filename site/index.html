@@ -33,7 +33,7 @@
             <div class="hero-points" aria-label="核心定义">
               <div class="hero-point">
                 <strong>先做什么</strong>
-                <p>把 agent harness、科学记忆基础设施、科研环境接口、多层次 reward 和数据回流这套底座做出来。</p>
+                <p>把 agent harness、科学记忆基础设施、科研环境接口、reward / benchmark 和数据回流这套底座做出来。</p>
               </div>
               <div class="hero-point">
                 <strong>怎么验证</strong>
@@ -104,8 +104,8 @@
               <p>把衔远自己的 AI4AI 底座做成可运行、可复盘、可迭代的系统。它不是单点工具，而是一套能组织复杂专业任务的基础设施。</p>
               <ul>
                 <li><b>连接对象：</b>科学知识、计算工具、专家判断、实验反馈和项目决策。</li>
-                <li><b>核心能力：</b>Agent Harness &amp; Evolution、Scientific Memory Infrastructure、Scientific Environment Interface、Hierarchical Reward Interface、Training Data Compiler 和 Model Evaluation &amp; Improvement。</li>
-                <li><b>验收方式：</b>能把任务计划、科学记忆、环境接口、多层次 reward、实验结果和训练样本整理成一条可回放链路。</li>
+                <li><b>核心能力：</b>Agent Harness &amp; Evolution、Scientific Memory Infrastructure、Scientific Environment Interface、Hierarchical Reward &amp; Benchmark Interface、Training Data Compiler 和 Model Evaluation &amp; Improvement。</li>
+                <li><b>验收方式：</b>能把任务计划、科学记忆、环境接口、reward / benchmark、实验结果和训练样本整理成一条可回放链路。</li>
               </ul>
             </article>
 
@@ -179,7 +179,7 @@
             <article class="strategy">
               <span class="tag">Step 1</span>
               <h3>先把 AI4AI 跑通</h3>
-              <p>先把任务计划、科学记忆、环境接口、多层次 reward、数据整理和回放评测做成可运行系统。</p>
+              <p>先把任务计划、科学记忆、环境接口、reward / benchmark、数据整理和回放评测做成可运行系统。</p>
               <ul>
                 <li><b>解决的问题：</b>没有可复用底座，Sci 项目容易变成一次性咨询或外包交付。</li>
                 <li><b>第一阶段产物：</b>项目空间、工具注册、审批节点、执行回放、评测样本和训练数据格式。</li>
@@ -227,7 +227,7 @@
               <h2 id="architecture-title">AI4AI 核心能力</h2>
             </div>
             <p>
-              这部分是资源申请的技术主体。Sci 项目会变化，但 agent harness、科研环境接口、reward、数据和模型改进能力要留在衔远内部，持续复用。
+              这部分是资源申请的技术主体。Sci 项目会变化，但 agent harness、科研环境接口、reward / benchmark、数据和模型改进能力要留在衔远内部，持续复用。
             </p>
           </div>
 
@@ -243,11 +243,11 @@
               </div>
               <div class="layer">
                 <div class="layer-index">3</div>
-                <div class="layer-body"><b>Scientific Environment Interface</b><span>把文献 / 模型 / 数据库工具、外部专家反馈和湿实验反馈接进来，形成可调用、可记录、可验收的协作接口</span></div>
+                <div class="layer-body"><b>Scientific Environment Interface</b><span>连接计算工具、数据库、外部专家和实验伙伴，统一任务提交、状态回写、结果格式和溯源记录</span></div>
               </div>
               <div class="layer">
                 <div class="layer-index">4</div>
-                <div class="layer-body"><b>Hierarchical Reward Interface</b><span>汇总计算评分、人类专家判断和湿实验反馈，按任务、候选、实验层级形成统一 reward 接口和改进信号</span></div>
+                <div class="layer-body"><b>Hierarchical Reward &amp; Benchmark Interface</b><span>把计算评分、专家判断和实验结果归一成多层 reward / benchmark，服务候选排序、agent 评测和模型改进</span></div>
               </div>
               <div class="layer">
                 <div class="layer-index">5</div>
@@ -266,7 +266,7 @@
                 <div class="asset-strip" aria-label="真实项目沉淀的四类资产">
                   <div class="asset-pill"><b>Scientific Agent Harness</b><span>代码、工作流、执行 / 记录 / 回放 / 评测框架</span></div>
                   <div class="asset-pill"><b>Scientific Memory Assets</b><span>轨迹、证据、专家判断、实验反馈和 reward 的可追溯记忆</span></div>
-                  <div class="asset-pill"><b>Scientific Environment Interface</b><span>工具、计算执行环境、专家反馈和湿实验反馈接口</span></div>
+                  <div class="asset-pill"><b>Scientific Environment Interface</b><span>工具、计算执行环境、实验伙伴接口和结果回写协议</span></div>
                   <div class="asset-pill"><b>AI-ready Data Assets</b><span>授权范围内的训练 / 评测 / 偏好 / 纠错样本，不是原始数据</span></div>
                 </div>
               </div>
@@ -279,8 +279,8 @@
                   </div>
                   <div class="ring-step step-runtime"><em>1</em><b>Harness &amp; Evolution</b><span>执行、回放和迭代</span></div>
                   <div class="ring-step step-memory"><em>2</em><b>Memory Infra</b><span>承接轨迹、证据与 reward</span></div>
-                  <div class="ring-step step-environment"><em>3</em><b>科研环境接口</b><span>工具 + 专家 / 湿实验反馈</span></div>
-                  <div class="ring-step step-ledger"><em>4</em><b>Reward Interface</b><span>计算 / 人类 / 湿实验</span></div>
+                  <div class="ring-step step-environment"><em>3</em><b>科研环境接口</b><span>接入工具与实验伙伴</span></div>
+                  <div class="ring-step step-ledger"><em>4</em><b>Reward Benchmark</b><span>统一排序和评测标尺</span></div>
                   <div class="ring-step step-data"><em>5</em><b>Agent-ready data</b><span>轨迹 / 偏好 / 纠错</span></div>
                   <div class="ring-step step-model"><em>6</em><b>Model Improvement</b><span>评测和能力升级</span></div>
                 </div>
