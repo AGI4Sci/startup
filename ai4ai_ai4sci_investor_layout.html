@@ -1028,11 +1028,11 @@
             <article class="strategy">
               <span class="tag">Year 1</span>
               <h3>第一年验证</h3>
-              <p>用 1-2 个生命科学项目验证三个目标，而不是追求项目数量或功能完整度。</p>
+              <p>用 1 个生命科学项目 + 1 个关键 ML 任务验证三件事：科学质量、产业价值和 AI 自进化能力。</p>
               <ul>
-                <li>AI 自进化：Project Room + harness 能记录、回放并导出可训练 trajectory</li>
-                <li>科学影响力：形成可复现的 target evidence、候选设计、实验计划和结果复盘</li>
-                <li>产业影响力：交付 Candidate Decision Package，支持继续投入、停项或下一轮实验决策</li>
+                <li>科学验证：围绕 1 个 target 完成 Research Dossier，达到可向 Nature Communications 及以上期刊投稿的质量标准</li>
+                <li>产业验证：完成 1 个 Target-to-Binder Sprint，交付候选物决策包，明确给出继续优化、停止投入或下一轮实验建议</li>
+                <li>AI 自进化验证：选择 1 个关键 ML 场景，在公开 benchmark 或可复现实验上达到 / 超过当前 SOTA</li>
               </ul>
             </article>
 
@@ -1252,44 +1252,44 @@
               <h2 id="roadmap-title">第一年验证路线</h2>
             </div>
             <p>
-              路线图按三个目标的最小证据组织：能训练、能复现、能决策。
+              路线图按两个任务组织：一个生命科学闭环，一个关键 ML benchmark。
             </p>
           </div>
 
           <div class="roadmap">
             <article class="milestone">
               <span class="time">0-3 个月</span>
-              <h3>准备可验证项目</h3>
-              <p>选定 1 个公开或低敏 target，搭建 Project Room、harness、Memory schema、review rubric 和数据权利条款。</p>
+              <h3>选题和基线</h3>
+              <p>选定 1 个公开或低敏 target，以及 1 个关键 ML 场景；明确科学投稿标准、产业交付标准和 SOTA baseline。</p>
               <ul class="module-list">
-                <li>Target Card + kill criteria</li>
-                <li>trace / replay / reward logging v0</li>
+                <li>Research Dossier outline + expert rubric</li>
+                <li>ML benchmark、baseline、harness v0</li>
               </ul>
             </article>
             <article class="milestone">
               <span class="time">3-6 个月</span>
-              <h3>Pilot A：Target-to-Binder</h3>
-              <p>围绕 1 个 target 生成 50-300 条抗体 / 纳米抗体候选，完成专家排序和小规模 wet validation。</p>
+              <h3>生命科学闭环</h3>
+              <p>围绕 1 个 target 生成 50-300 条抗体 / 纳米抗体候选，Top 20-50 条进入表达、结合和成药性验证。</p>
               <ul class="module-list">
-                <li>expression / binding / developability reward</li>
-                <li>review、failure、negative samples 入库</li>
+                <li>Research Dossier + 候选物决策包</li>
+                <li>raw data、failure、negative samples 入库</li>
               </ul>
             </article>
             <article class="milestone">
               <span class="time">6-12 个月</span>
-              <h3>Pilot B：Reward 扩展</h3>
-              <p>若资源允许，接入 developability、cell phenotype、organoid / organ-chip、HCI 或 dose-response readout。</p>
+              <h3>ML SOTA 验证</h3>
+              <p>聚焦一个关键 ML 场景：长序列建模、蛋白结构预测、生物基础模型或长文本 RL 算法。</p>
               <ul class="module-list">
-                <li>统一 reward schema + metadata</li>
-                <li>可用于下一轮候选排序</li>
+                <li>公开 benchmark 或可复现实验达到 / 超过 SOTA</li>
+                <li>沉淀 harness、训练数据和评测流程</li>
               </ul>
             </article>
             <article class="milestone">
               <span class="time">12-18 个月</span>
-              <h3>平台化判断</h3>
-              <p>基于 1-2 个项目判断是否进入平台化销售：Project Room、private deployment、更多 workflow。</p>
+              <h3>复用判断</h3>
+              <p>判断 Research Dossier、候选物决策包和 ML harness 是否可复用到下一个项目。</p>
               <ul class="module-list">
-                <li>Candidate Decision Package 可复用</li>
+                <li>Project Room / private deployment 进入销售判断</li>
                 <li>AI-ready training dataset v0</li>
               </ul>
             </article>
@@ -1305,19 +1305,19 @@
               <h2 id="metrics-title">验收指标</h2>
             </div>
             <p>
-              指标对应三类目标：AI 是否变得可训练，科研过程是否可信，客户是否能据此行动。
+              指标对应三类目标：科学上能投稿，产业上能决策，AI 上能超过强基线。
             </p>
           </div>
 
           <div class="metrics">
             <div class="north-star">
               <strong>North Star</strong>
-              <p>1-2 个真实项目能否同时产出客户决策、可复现科研过程和可训练 agent 轨迹</p>
+              <p>1 个生命科学项目和 1 个关键 ML 任务，能否同时形成科学、产业和 AI 自进化的硬证据</p>
             </div>
             <div class="metric-table">
-              <div class="metric"><b>AI 自进化</b><span>state-action-observation-review-reward 轨迹完整；可回放；可导出 SFT / preference / RL-ready dataset v0。</span></div>
-              <div class="metric"><b>科学影响力</b><span>Target Card、证据审查、实验计划、原始结果、失败原因和复盘可复现、可审查。</span></div>
-              <div class="metric"><b>产业影响力</b><span>8-12 周交付 Candidate Decision Package，客户能据此 continue / kill / next experiment。</span></div>
+              <div class="metric"><b>科学验证</b><span>Research Dossier 达到 Nature Communications 及以上期刊投稿准备标准；3 位外部专家盲审 ≥4/5。</span></div>
+              <div class="metric"><b>产业验证</b><span>8-12 周完成 Target-to-Binder Sprint；交付候选物决策包，明确继续优化、停止投入或下一轮实验建议。</span></div>
+              <div class="metric"><b>AI 自进化</b><span>1 个关键 ML 场景达到 / 超过当前 SOTA；沉淀可复用 harness、训练数据和评测流程。</span></div>
               <div class="metric"><b>Wet reward 质量</b><span>90%+ 样本具备 metadata；包含 raw curve / raw image、QC flags、negative data、SOP version。</span></div>
             </div>
           </div>
