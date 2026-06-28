@@ -9,6 +9,9 @@
   --coral: #c74754;
   --gold: #a87900;
   --black: #0d0f10;
+  --section-blue: #dceef8;
+  --section-blue-soft: #eef7fc;
+  --blue-line: #bdd5e4;
   --shadow: 0 22px 50px rgba(23, 26, 29, 0.08);
 }
 
@@ -26,7 +29,7 @@ body {
   background: var(--soft);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
     "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
-  line-height: 1.58;
+  line-height: 1.55;
   letter-spacing: 0;
 }
 
@@ -103,13 +106,15 @@ a {
 }
 
 .hero {
-  padding: 78px 32px 64px;
-  color: #f7faf7;
+  display: grid;
+  align-items: start;
+  padding: 86px 32px 72px;
+  color: var(--ink);
   background:
-    linear-gradient(120deg, rgba(13, 15, 16, 0.96), rgba(13, 15, 16, 0.82)),
-    repeating-linear-gradient(90deg, rgba(255,255,255,0.06) 0 1px, transparent 1px 84px),
-    repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0 1px, transparent 1px 84px),
-    #101312;
+    linear-gradient(120deg, rgba(255, 255, 255, 0.68), rgba(220, 238, 248, 0.92)),
+    repeating-linear-gradient(90deg, rgba(23, 26, 29, 0.045) 0 1px, transparent 1px 84px),
+    repeating-linear-gradient(0deg, rgba(23, 26, 29, 0.04) 0 1px, transparent 1px 84px),
+    var(--section-blue);
 }
 
 .inner {
@@ -119,14 +124,14 @@ a {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.55fr);
-  gap: 34px;
-  align-items: start;
+  grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
+  gap: 46px;
+  align-items: center;
 }
 
 .eyebrow {
   margin: 0 0 16px;
-  color: #a9d9c7;
+  color: var(--green);
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -141,8 +146,8 @@ p {
 
 h1 {
   max-width: 820px;
-  margin-bottom: 20px;
-  font-size: 50px;
+  margin-bottom: 22px;
+  font-size: 56px;
   line-height: 1.08;
   font-weight: 800;
   letter-spacing: 0;
@@ -150,7 +155,7 @@ h1 {
 
 h2 {
   margin-bottom: 16px;
-  font-size: 32px;
+  font-size: 34px;
   line-height: 1.2;
   letter-spacing: 0;
 }
@@ -165,17 +170,17 @@ h3 {
 .lead {
   max-width: 820px;
   margin-bottom: 0;
-  color: rgba(247, 250, 247, 0.84);
+  color: var(--muted);
   font-size: 20px;
 }
 
 .hero-panel {
   padding: 22px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  border: 1px solid var(--blue-line);
   border-top: 5px solid var(--green);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.06);
-  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.18);
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: var(--shadow);
 }
 
 .hero-panel.cyan { border-top-color: var(--cyan); }
@@ -185,12 +190,12 @@ h3 {
 .hero-panel strong {
   display: block;
   margin-bottom: 8px;
-  color: #fff;
+  color: var(--ink);
 }
 
 .hero-panel p {
   margin-bottom: 12px;
-  color: rgba(247, 250, 247, 0.76);
+  color: var(--muted);
 }
 
 .hero-panel p:last-child {
@@ -198,7 +203,7 @@ h3 {
 }
 
 .section {
-  padding: 68px 32px;
+  padding: 72px 32px;
 }
 
 .section.white {
@@ -206,12 +211,12 @@ h3 {
 }
 
 .section.alt {
-  background: #edf4ef;
+  background: var(--section-blue);
 }
 
 .section.dark {
-  color: #f7faf7;
-  background: var(--black);
+  color: var(--ink);
+  background: var(--section-blue);
 }
 
 .section-heading {
@@ -229,7 +234,7 @@ h3 {
 }
 
 .dark .section-heading p {
-  color: rgba(247, 250, 247, 0.72);
+  color: var(--muted);
 }
 
 .kpi-grid,
@@ -243,7 +248,7 @@ h3 {
 .card {
   min-height: 170px;
   padding: 22px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--blue-line);
   border-radius: 8px;
   background: var(--paper);
   box-shadow: var(--shadow);
@@ -277,7 +282,7 @@ h3 {
 
 .table-wrap {
   overflow-x: auto;
-  border: 1px solid var(--line);
+  border: 1px solid var(--blue-line);
   border-radius: 8px;
   background: var(--paper);
   box-shadow: var(--shadow);
@@ -300,7 +305,7 @@ td {
 
 th {
   color: var(--ink);
-  background: #f6f7f4;
+  background: var(--section-blue-soft);
   font-weight: 800;
 }
 
@@ -360,15 +365,16 @@ tr:last-child td {
 
 .footer-nav a {
   padding: 14px 16px;
-  color: rgba(247, 250, 247, 0.82);
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: var(--ink);
+  border: 1px solid var(--blue-line);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: var(--shadow);
 }
 
 .footer-nav a:hover {
-  color: #fff;
-  border-color: rgba(255, 255, 255, 0.28);
+  color: var(--cyan);
+  border-color: rgba(27, 127, 145, 0.38);
 }
 
 @media (max-width: 980px) {
