@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AI4AI × AI4Sci | Investor Brief</title>
+  <title>AI4AI × AGI4Sci | Internal Brief</title>
   <link rel="stylesheet" href="assets/investor-layout.css" />
 </head>
 <body>
   <div class="shell">
     <header class="topbar">
-      <a class="brand" href="#top" aria-label="AI4AI AI4Sci Investor Brief">
+      <a class="brand" href="#top" aria-label="AI4AI AGI4Sci Internal Brief">
         <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
-        AI4AI × AI4Sci
+        AI4AI × AGI4Sci
       </a>
       <nav class="nav" aria-label="页面导航">
         <a href="#goal">目标</a>
@@ -22,7 +22,6 @@
         <a href="#scenes">示例</a>
         <a href="#roadmap">验证</a>
         <a href="#resources">资源</a>
-        <a href="#decisions">拍板</a>
       </nav>
     </header>
 
@@ -30,60 +29,65 @@
       <section class="hero" aria-labelledby="hero-title">
         <div class="inner hero-grid">
           <div>
-            <p class="eyebrow">Investor Entry</p>
-            <h1 id="hero-title">AI4AI 平台牵引 AI4Sci 垂直闭环</h1>
+            <p class="eyebrow">Internal Proposal</p>
+            <h1 id="hero-title">用 AI4AI 底座搭建 AGI4Sci 平台</h1>
             <p class="lead">
-              面向有真实研发任务的生命科学团队，先交付 Target-to-Binder 项目结果，再把科学资源、专家审查、实验反馈和 agent 轨迹沉淀成可复用平台。
+              衔远负责搭建 AGI4Sci 平台能力：agent runtime、项目工作区、证据记忆、工具编排、评测回放和数据闭环；具体案例的靶点牵引、专家判断和实验验证由外部伙伴协作接入。
             </p>
             <div class="hero-points" aria-label="核心定义">
               <div class="hero-point">
                 <strong>目标</strong>
-                <p>建设能执行、记录、审查、训练和复盘科研任务的 Science Agent OS。</p>
+                <p>用一条真实科学案例闭环，验证衔远 AGI4Sci 平台能否支撑高复杂度专业任务。</p>
               </div>
               <div class="hero-point">
                 <strong>用户</strong>
-                <p>有明确 target / biologics candidate 和 8-12 周项目决策窗口的 discovery team，典型规模 20-200 人。</p>
+                <p>首批聚焦 ADC / 双抗 / TCE / biologics 项目型 biotech，典型规模 20-200 人。</p>
               </div>
               <div class="hero-point">
                 <strong>产品</strong>
-                <p>第一年采用 project-based sprint + confidential project room + evidence dossier。</p>
+                <p>第一单采用 Target-to-Binder Sprint，不先销售抽象平台订阅。</p>
               </div>
             </div>
           </div>
 
-          <aside class="system-map" aria-label="投资人理解路径">
-            <div class="map-title">
-              <span>Operating Model</span>
-              <span>Customer Value → Platform Asset</span>
+          <aside class="system-map" aria-label="项目总览图">
+            <div class="overview-header">
+              <span>项目总览</span>
+              <strong>衔远搭 AGI4Sci 平台，伙伴牵引具体案例</strong>
             </div>
-            <div class="map-core">
-              <div class="map-node green">
-                <b>Customer Deliverable</b>
-                <span>Target-to-Binder Sprint、Candidate Decision Package、wet validation review</span>
+            <div class="project-flow" aria-label="从客户问题到交付成品">
+              <div class="flow-step start">
+                <small>客户带来的问题</small>
+                <b>这个靶点值不值得继续投？</b>
+                <p>客户需要在 8-12 周内看到候选、证据和下一步实验判断。</p>
               </div>
-              <div class="map-node cyan">
-                <b>Platform Product</b>
-                <span>Scientific Project Room、Memory / Tool / Review & Reward / Training Data Engines</span>
+              <div class="flow-arrow" aria-hidden="true">→</div>
+              <div class="flow-step middle">
+                <small>我们组织项目冲刺</small>
+                <b>证据梳理 + 候选生成 + 排序复核</b>
+                <p>衔远负责 AGI4Sci project room、agent workflow、工具编排和可回放轨迹；外部伙伴负责具体 target、科学输入和实验可行性判断。</p>
               </div>
-            </div>
-            <div class="map-center">
-              <b>Science Agent OS</b>
-              <span>把科研项目变成可审计、可交付、可训练的系统</span>
-            </div>
-            <div class="map-core">
-              <div class="map-node coral">
-                <b>Wet Reward</b>
-                <span>expression、binding、developability、phenotype、toxicity</span>
-              </div>
-              <div class="map-node gold">
-                <b>AI-Ready Training Data</b>
-                <span>SFT / preference / critique / failure recovery / RL-ready dataset</span>
+              <div class="flow-arrow" aria-hidden="true">→</div>
+              <div class="flow-step end">
+                <small>客户拿到的成品</small>
+                <b>候选清单和决策档案</b>
+                <p>说明哪些候选值得验证、为什么选它们，以及继续或停止的依据。</p>
               </div>
             </div>
-            <div class="map-stack">
-              <div class="stack-row"><em>1</em><span>第一单卖项目结果，不直接卖抽象平台</span></div>
-              <div class="stack-row"><em>2</em><span>Project Room 是交付载体，也是平台产品原型</span></div>
-              <div class="stack-row"><em>3</em><span>每个项目同时产生客户判断材料和训练资产</span></div>
+            <div class="feedback-loop" aria-label="实验回流与平台沉淀">
+              <div class="loop-block">
+                <b>外部实验验证</b>
+                <span>expression / binding / developability</span>
+              </div>
+              <div class="loop-bridge" aria-hidden="true"><span>回流</span></div>
+              <div class="loop-block">
+                <b>复盘沉淀</b>
+                <span>失败样本、评分标准、数据格式、可复用工作流</span>
+              </div>
+            </div>
+            <div class="overview-note">
+              <b>长期变成什么？</b>
+              <span>每做完一个项目，衔远的 AGI4Sci 平台多一套经过真实科学任务检验的流程、数据标准、评测方法和工具调用轨迹。</span>
             </div>
           </aside>
         </div>
@@ -116,11 +120,11 @@
             <article class="strategy">
               <span class="tag">Year 1</span>
               <h3>第一年验证</h3>
-              <p>用 1 个生命科学项目 + 1 个关键 ML 任务验证三件事：AI 自进化能力、科学质量、产业价值。</p>
+              <p>用 1 个可验证、可讲故事、不过度敏感的生命科学项目 + 1 个关键 ML 任务验证三件事：AI 自进化能力、科学质量、产业价值。</p>
               <ul>
                 <li><b>AI 自进化验证：</b>选择 1 个关键 ML 场景(例如长序列建模、蛋白结构预测、长文本 RL 算法)，在公开 benchmark 或可复现实验上达到 / 超过当前 SOTA</li>
-                <li><b>科学验证：</b>围绕 1 个 target 完成 Research Dossier，达到可向 Nature Communications 及以上期刊投稿的质量标准</li>
-                <li><b>产业验证：</b>完成 1 个 Target-to-Binder Sprint，8-12 周内生成 50-300 条候选，Top 20-50 条进入表达、结合和成药性验证</li>
+                <li><b>科学验证：</b>围绕 1 个公开证据较多、结构或抗体设计空间明确、IP 不过度敏感的 target 完成 Research Dossier</li>
+                <li><b>产业验证：</b>为 1 个项目型 biotech 完成 Target-to-Binder Sprint，8-12 周内生成 50-300 条候选，Top 20-30 条进入表达、结合和成药性验证</li>
               </ul>
             </article>
 
@@ -132,18 +136,19 @@
                 <li><b>Scientific Memory Engine：</b>文献、数据库、claim-evidence-provenance、项目状态</li>
                 <li><b>Scientific Tool Engine：</b>深度学习模型、计算工具、数据库 API、MCP 服务、wet-lab 接口</li>
                 <li><b>Scientific Review & Reward Engine：</b>expert taste、rubric、wet reward、human override</li>
-                <li><b>AI-Ready Training Data Engine：</b>SFT、preference、agentic RL、agent self-evolve dataset</li>
+                <li><b>AI-Ready Training Data Engine：</b>基于内部轨迹、schema、rubric、匿名统计和授权数据形成 SFT、preference、agentic RL、agent self-evolve dataset</li>
               </ul>
             </article>
 
             <article class="strategy">
               <span class="tag">Boundary</span>
               <h3>第一阶段边界</h3>
-              <p>第一阶段不是卖通用科研助手或总部级平台订阅，而是用项目制 sprint 服务有明确决策窗口的 discovery team。</p>
+              <p>第一阶段不是卖通用科研助手或总部级平台订阅，而是用 Target-to-Binder Sprint 服务有明确决策窗口的 discovery team。</p>
               <ul>
-                <li><b>客户与伙伴边界：</b>直接付费客户和标杆试点客户属于产业界客户，目标是收入和产业影响力；科研机构主要服务学术影响力和高质量项目源；实验验证伙伴多是我们付费采购或重点共建的对象，目标是形成验证壁垒。</li>
-                <li><b>产品边界：</b>Target-to-Binder Sprint 是第一单；Project Room 是交付载体，也是 Science Agent OS 的产品雏形。</li>
+                <li><b>客户与伙伴边界：</b>首批直接付费客户锁定 ADC / 双抗 / TCE / biologics 项目型 biotech；大药企只做单项目标杆试点，不作为第一收入主线；科研机构主要服务学术影响力和高质量项目源；实验验证伙伴多是我们付费采购或重点共建的对象。</li>
+                <li><b>产品边界：</b>Target-to-Binder Sprint 是第一单；Project Room 是交付载体，也是 Science Agent OS 的产品雏形；完成 2-3 个项目后再评估平台订阅、私有部署或企业 workflow。</li>
                 <li><b>市场边界：</b>第一阶段只服务有明确靶点或候选分子的生物药早研项目，帮助客户在 8-12 周内决定继续投入、停止、对外 BD，或进入下一轮实验；不覆盖小分子全流程、临床开发、常规 CRO 外包和通用科研工具。</li>
+                <li><b>数据边界：</b>客户原始数据、项目材料、序列和实验结果默认不用于训练；schema、rubric、workflow、匿名统计、授权数据和内部生成轨迹可用于平台改进。</li>
               </ul>
             </article>
           </div>
@@ -158,20 +163,20 @@
               <h2 id="users-title">目标用户</h2>
             </div>
             <p>
-              进入第一阶段闭环的对象分成四类：产业界客户负责收入和产业影响力，科研机构负责学术影响力和项目源，实验验证伙伴负责验证壁垒。
+              第一批客户优先级已经确定：项目型 biotech 负责直接收入，大药企负责标杆试点，科研机构负责学术影响力和项目源，wet-lab 平台负责验证壁垒。
             </p>
           </div>
 
           <div class="asset-grid">
             <a class="asset asset-link" href="pages/target-users/industrial-direct.html">
               <h3>产业客户：直接付费</h3>
-              <p>ADC / 双抗 / TCE / biologics 项目型 biotech。已有 target、disease hypothesis 或 candidate，需要 8-12 周内完成 continue / kill / BD / next experiment 判断。目标是项目收入、复购和产业案例。</p>
+              <p>首批直接付费客户锁定 ADC / 双抗 / TCE / biologics 项目型 biotech。典型规模 20-200 人，已有 target、disease hypothesis 或 candidate，需要 8-12 周内完成 continue / kill / BD / next experiment 判断。</p>
               <span class="link-more">查看分析与排序 →</span>
             </a>
 
             <a class="asset asset-link" href="pages/target-users/industrial-pilot.html">
               <h3>产业客户：标杆试点</h3>
-              <p>大药企或头部 biotech 的单项目组。它们有预算、数据和真实任务，但采购周期和合规门槛更高。目标是产业影响力、可信背书和后续企业级合作机会。</p>
+              <p>大药企或头部 biotech 的单项目组。它们有预算、数据和真实任务，但采购周期和合规门槛更高；第一年用于产业影响力、可信背书和后续企业级合作机会，不作为第一收入主线。</p>
               <span class="link-more">查看分析与排序 →</span>
             </a>
 
@@ -183,7 +188,7 @@
 
             <a class="asset asset-link" href="pages/target-users/validation-partners.html">
               <h3>实验验证伙伴：验证壁垒</h3>
-              <p>CRO、模型动物、类器官、器官芯片和 wet-lab 平台不是买单客户，很多时候是我们付费或重点共建的对象。目标是获得可复盘、可对比、可训练的验证数据。</p>
+              <p>第一阶段优先接入 2 家 expression / binding / developability 伙伴；类器官或器官芯片作为 phenotype reward 小规模 pilot。它们不是买单客户，目标是获得可复盘、可对比、可授权复用的验证数据。</p>
               <span class="link-more">查看分析与排序 →</span>
             </a>
           </div>
@@ -198,7 +203,7 @@
               <h2 id="offer-title">产品形态</h2>
             </div>
             <p>
-              第一阶段不用让客户理解复杂平台。客户看到的是一个项目工作区，拿走的是一套能用于决策、投稿或复盘的交付材料；实验和数据按统一标准推进，项目结束后再沉淀为我们可复用的流程、数据和判断方法。
+              第一年只打一条 Target-to-Binder Sprint 闭环。衔远交付 AGI4Sci 平台能力和项目操作系统，外部伙伴牵引具体靶点、专家评审和实验验证；客户拿走候选生成、证据整理、小规模 wet validation 和最终决策档案。
             </p>
           </div>
 
@@ -214,9 +219,27 @@
             </article>
 
             <article class="decision">
+              <h3>衔远 AGI4Sci 平台能力</h3>
+              <ol>
+                <li>建设 project room、agent workflow、工具编排、证据记忆、执行回放和评测 harness。</li>
+                <li>把每次候选生成、专家反馈、实验结果和项目决策转成可审计轨迹。</li>
+                <li>沉淀 schema、rubric、评测 harness 和授权数据资产，服务下一轮 AGI4Sci 平台迭代。</li>
+              </ol>
+            </article>
+
+            <article class="decision">
+              <h3>外部伙伴案例牵引</h3>
+              <ol>
+                <li>外部伙伴负责具体 target 背景、疾病假设、科学可行性和专家评审。</li>
+                <li>wet-lab partner 承担 expression、binding、developability 小规模验证。</li>
+                <li>衔远不依赖自建完整科学项目来源，而是把伙伴案例和实验能力接入统一 AGI4Sci 项目系统。</li>
+              </ol>
+            </article>
+
+            <article class="decision">
               <h3>项目交付档案</h3>
               <ol>
-                <li>项目结束时交给客户的一套完整材料。</li>
+                <li>Target-to-Binder Sprint 结束时交给客户的一套完整材料。</li>
                 <li>对早研团队，重点回答是否继续投入、停止、对外合作或安排下一轮实验。</li>
                 <li>对药企项目组，重点支持内部评审、合规沟通和后续合作判断。</li>
                 <li>对科研机构，重点整理成论文、图表、代码、实验方案和可复现材料。</li>
@@ -228,7 +251,7 @@
             <article class="decision">
               <h3>实验与数据包</h3>
               <ol>
-                <li>把实验做法、样本信息、质控要求和结果格式提前说清楚。</li>
+                <li>第一阶段实验范围锁定 expression、binding、developability，phenotype reward 只做第二 pilot。</li>
                 <li>交付实验任务书、样本表、SOP、质控标准和数据回传模板。</li>
                 <li>保留原始数据、失败结果、异常记录和后续复盘所需的上下文。</li>
               </ol>
@@ -239,7 +262,7 @@
               <h3>项目沉淀与复用</h3>
               <ol>
                 <li>这不是第一阶段单独卖给客户的产品，而是我们从每个项目里积累的能力。</li>
-                <li>记录哪些证据有用、哪些候选失败、专家为什么这样判断、实验结果如何反馈。</li>
+                <li>在客户授权边界内记录哪些证据有用、哪些候选失败、专家为什么这样判断、实验结果如何反馈。</li>
                 <li>沉淀成下一次项目可以复用的流程、模板、数据标准和评估方法。</li>
               </ol>
             </article>
@@ -255,14 +278,14 @@
               <h2 id="delivery-title">项目交付系统</h2>
             </div>
             <p>
-              这一层回答客户项目如何被生产出来：从项目输入，到工作区推进，再到交付档案和实验数据包，最后沉淀成下一次可复用的流程。
+              这一层回答 Target-to-Binder Sprint 如何被生产出来：从项目输入，到工作区推进，再到交付档案和实验数据包，最后在授权边界内沉淀成下一次可复用的流程。
             </p>
           </div>
 
           <div class="asset-grid">
             <article class="asset">
               <h3>项目输入</h3>
-              <p>客户给出 target、疾病假设、候选分子、项目约束、成功标准和停止标准。第一步不是跑模型，而是把项目边界、数据权限和判断口径说清楚。</p>
+              <p>客户给出 target、疾病假设、候选分子、项目约束、成功标准和停止标准。第一步不是跑模型，而是确认 target 是否公开证据充分、IP 不过度敏感，并把数据默认不训练、授权复用边界和判断口径说清楚。</p>
             </article>
             <article class="asset">
               <h3>项目工作区</h3>
@@ -274,7 +297,7 @@
             </article>
             <article class="asset">
               <h3>项目沉淀</h3>
-              <p>每个项目结束后留下模板、数据标准、失败案例、评审规则、实验反馈和复盘记录，成为下一次项目更快、更准的基础。</p>
+              <p>每个项目结束后，在授权范围内留下模板、数据标准、失败案例、评审规则、实验反馈和复盘记录，成为下一次项目更快、更准的基础。</p>
             </article>
           </div>
         </div>
@@ -288,12 +311,12 @@
               <h2 id="architecture-title">平台技术架构</h2>
             </div>
             <p>
-              这一层回答技术壁垒在哪里：不是把模型接到聊天框，而是把科研记忆、工具编排、专家判断、实验反馈和可回放轨迹组织成持续改进的系统。
+              这一层是衔远内部要沉淀的 AGI4Sci 平台能力：底层复用 AI4AI 方法，但产品形态面向科学任务，把科研记忆、工具编排、专家判断、实验反馈和可回放轨迹组织成持续改进的系统。
             </p>
           </div>
 
           <div class="architecture">
-            <div class="layers" aria-label="AI4AI 平台技术架构">
+            <div class="layers" aria-label="AGI4Sci 平台技术架构">
               <div class="layer">
                 <div class="layer-index">1</div>
                 <div class="layer-body"><b>Scientific Memory Graph</b><span>把文献、数据库、内部材料和项目状态整理成 claim-evidence-provenance 图谱，保留来源、版本和冲突证据</span></div>
@@ -304,7 +327,7 @@
               </div>
               <div class="layer">
                 <div class="layer-index">3</div>
-                <div class="layer-body"><b>Review & Reward Ledger</b><span>记录专家 rubric、候选排序、人工 override、QC flags、wet assay 结果和分歧意见，让“好结果”可追踪、可比较</span></div>
+                <div class="layer-body"><b>Review & Reward Ledger</b><span>记录专家 rubric、候选排序、人工 override、QC flags、expression / binding / developability 结果和分歧意见，让“好结果”可追踪、可比较</span></div>
               </div>
               <div class="layer">
                 <div class="layer-index">4</div>
@@ -312,24 +335,24 @@
               </div>
               <div class="layer">
                 <div class="layer-index">5</div>
-                <div class="layer-body"><b>Training Data Compiler</b><span>把项目轨迹编译为 SFT、preference、critique、failure recovery 和 RL-ready transition，用于下一代科研 agent 训练</span></div>
+                <div class="layer-body"><b>Training Data Compiler</b><span>把内部生成轨迹、schema、rubric、匿名统计和授权数据编译为 SFT、preference、critique、failure recovery 和 RL-ready transition</span></div>
               </div>
               <div class="layer">
                 <div class="layer-index">6</div>
-                <div class="layer-body"><b>Secure Project Runtime</b><span>提供项目隔离、权限审计、no-training-by-default、预算控制、安全边界和工具调用策略</span></div>
+                <div class="layer-body"><b>Secure Project Runtime</b><span>提供项目隔离、权限审计、客户原始数据默认不训练、预算控制、安全边界和工具调用策略</span></div>
               </div>
             </div>
 
             <div class="flow">
               <div>
                 <h3>技术特色</h3>
-                <p>普通 RAG 只能回答问题，普通 CRO 只能交付实验，普通报告工具只能整理材料。我们的核心是把证据、工具、评审、实验反馈和执行轨迹放在同一套可训练、可复盘的科研运行系统里。</p>
+                <p>普通 RAG 只能回答问题，普通 CRO 只能交付实验，普通报告工具只能整理材料。我们的核心是把证据、工具、评审、实验反馈和执行轨迹放在同一套可复盘、可审计、可在授权边界内持续改进的科研运行系统里。</p>
               </div>
               <div class="flywheel" aria-label="四类技术复利">
                 <div class="wheel-step"><b>Memory</b><span>证据图谱、项目状态和版本化科研记忆</span></div>
                 <div class="wheel-step"><b>Tool</b><span>可组合、可约束、可复现的科学工具调用</span></div>
-                <div class="wheel-step"><b>Reward</b><span>专家判断、质控标准和 wet reward 记录</span></div>
-                <div class="wheel-step"><b>Trace</b><span>可回放轨迹和可训练的项目数据资产</span></div>
+                <div class="wheel-step"><b>Reward</b><span>专家判断、质控标准和首阶段 wet reward 记录</span></div>
+                <div class="wheel-step"><b>Trace</b><span>可回放轨迹和授权边界内的训练数据资产</span></div>
               </div>
             </div>
           </div>
@@ -341,10 +364,10 @@
           <div class="section-heading">
             <div>
               <p class="eyebrow">06 · Vertical Loop Example</p>
-              <h2 id="scenes-title">Target-to-Binder 闭环示例</h2>
+              <h2 id="scenes-title">第一条闭环：Target-to-Binder Sprint</h2>
             </div>
             <p>
-              Target-to-Binder 不是全部业务边界，而是第一条最适合跑通的闭环：周期短、交付清楚、wet reward 明确，能同时验证客户价值和平台复利。
+              这不是要衔远自建所有科学案例来源，而是用外部伙伴的真实项目牵引 AGI4Sci 平台能力：周期短、交付清楚，expression / binding / developability 的 wet reward 明确。
             </p>
           </div>
 
@@ -355,13 +378,13 @@
                 <p>从客户输入到决策交付，每一步都留下证据、版本和复盘材料。</p>
               </div>
               <div class="loop">
-                <div class="loop-step"><em>1</em><span>客户输入 target、疾病假设、候选物或项目约束，明确成功标准和停止标准</span></div>
-                <div class="loop-step"><em>2</em><span>系统整理文献、数据库、竞品、结构信息和内部材料，形成靶点证据图</span></div>
-                <div class="loop-step"><em>3</em><span>生成或筛选 binder、antibody、nanobody 或 format options，并给出风险标签</span></div>
-                <div class="loop-step"><em>4</em><span>专家评审候选排序、机制假设、成药性风险和实验可行性</span></div>
-                <div class="loop-step"><em>5</em><span>Top candidates 进入 expression、binding、developability 等小规模 wet validation</span></div>
+                <div class="loop-step"><em>1</em><span>客户和外部伙伴输入 target、疾病假设、候选物或项目约束，明确成功标准和停止标准</span></div>
+                <div class="loop-step"><em>2</em><span>衔远系统整理文献、数据库、竞品、结构信息和项目材料，形成可追溯靶点证据图</span></div>
+                <div class="loop-step"><em>3</em><span>衔远 AGI4Sci 平台调度模型和工具，生成或筛选 binder、antibody、nanobody 或 format options，并给出风险标签</span></div>
+                <div class="loop-step"><em>4</em><span>外部专家评审候选排序、机制假设、成药性风险和实验可行性，评审过程进入 rubric</span></div>
+                <div class="loop-step"><em>5</em><span>Top 20-30 candidates 进入外部 wet-lab partner 的 expression、binding、developability 小规模验证</span></div>
                 <div class="loop-step"><em>6</em><span>输出继续、停止、BD、补实验或下一轮优化建议</span></div>
-                <div class="loop-step"><em>7</em><span>把失败案例、实验反馈、专家判断和工具轨迹回流到平台</span></div>
+                <div class="loop-step"><em>7</em><span>把失败案例、实验反馈、专家判断和工具轨迹回流到衔远 AGI4Sci 平台</span></div>
               </div>
             </article>
 
@@ -374,8 +397,8 @@
                 <div class="loop-step"><em>1</em><span>输入清楚：客户通常已有 target、疾病场景或候选分子</span></div>
                 <div class="loop-step"><em>2</em><span>周期可控：8-12 周能形成候选排序和小规模验证结果</span></div>
                 <div class="loop-step"><em>3</em><span>交付明确：客户能用结果做 continue、kill、BD 或下一轮实验决策</span></div>
-                <div class="loop-step"><em>4</em><span>反馈真实：expression、binding、developability 给出可训练的 wet reward</span></div>
-                <div class="loop-step"><em>5</em><span>可扩展：同一证据链可延展到 binder optimization、phenotype reward、BD / IND / publication dossier</span></div>
+                <div class="loop-step"><em>4</em><span>反馈真实：expression、binding、developability 给出可复盘的 wet reward，不需要衔远先自建实验组织</span></div>
+                <div class="loop-step"><em>5</em><span>可扩展：同一 AGI4Sci 平台可延展到 binder optimization、BD / IND / publication dossier；phenotype reward 单独作为第二 pilot</span></div>
               </div>
             </article>
           </div>
@@ -387,49 +410,50 @@
           <div class="section-heading">
             <div>
               <p class="eyebrow">07 · Validation Plan</p>
-              <h2 id="roadmap-title">第一年验证计划</h2>
+              <h2 id="roadmap-title">18 个月验证计划</h2>
             </div>
             <p>
-              每个阶段只保留要完成的事和通过标准，用来判断科学、产业和技术复利是否同时成立。
+              每个阶段都同时验收两件事：外部伙伴能否带来真实案例和 wet reward，衔远 AGI4Sci 平台能否把任务过程变成可复盘、可评测、可复制的系统能力。
             </p>
           </div>
 
           <div class="roadmap">
             <article class="milestone">
               <span class="time">0-3 个月</span>
-              <h3>选题和基线</h3>
-              <p>选定 1 个公开或低敏 target，以及 1 个关键 ML 场景；明确专家、候选实验伙伴、数据边界和 baseline。</p>
+              <h3>底座 v0 与外部项目定义</h3>
+              <p>确定 1 个公开证据较多、结构或抗体设计空间明确、IP 不过度敏感的 target；外部伙伴给出案例牵引、科学输入和实验边界，衔远完成 project room、证据图谱、工具编排和评测 harness v0。</p>
               <ul class="module-list">
-                <li>通过标准：项目边界、专家 rubric、实验伙伴 shortlist 和数据字段确认</li>
-                <li>通过标准：ML benchmark、baseline、harness v0 可复现</li>
+                <li>外部伙伴通过标准：target、成功标准、停止标准、专家 rubric、实验伙伴 shortlist 和数据字段确认</li>
+                <li>AGI4Sci 平台通过标准：project room v0、证据 schema、工具调用规范、baseline 和 harness v0 可复现</li>
               </ul>
             </article>
             <article class="milestone">
               <span class="time">3-6 个月</span>
-              <h3>技术基线与实验准备</h3>
-              <p>围绕 1 个 target 先完成 dry-run：证据整理、候选生成、专家评审和候选排序；同步完成实验伙伴筛选、SOP、样本表和数据回传模板。</p>
+              <h3>闭环 dry-run 与伙伴接口</h3>
+              <p>围绕选定 target 完成 dry-run：证据整理、候选生成、专家评审和候选排序；同步把外部专家评审、expression、binding、developability SOP 和数据回传模板接入项目系统。</p>
               <ul class="module-list">
-                <li>通过标准：生成 50-300 条候选，Top 20-50 条完成专家评审和实验优先级排序</li>
-                <li>通过标准：wet-lab partner、SOP、QC 标准、metadata schema 和数据回传流程确认</li>
+                <li>外部伙伴通过标准：生成 50-300 条候选，Top 20-30 条完成外部专家评审和实验优先级排序</li>
+                <li>AGI4Sci 平台通过标准：wet-lab partner SOP、QC 标准、metadata schema、数据回传流程和执行轨迹可回放</li>
               </ul>
             </article>
             <article class="milestone">
               <span class="time">6-12 个月</span>
-              <h3>跑通湿实验闭环</h3>
-              <p>Top candidates 进入表达、结合和成药性验证；同时推进关键 ML 场景，检查项目轨迹是否能变成可训练、可评测、可复用的数据资产。</p>
+              <h3>wet reward 闭环验收</h3>
+              <p>Top 20-30 candidates 进入外部伙伴的表达、结合和成药性验证；衔远同步检查证据、候选、专家判断、实验反馈和失败原因是否能在授权边界内变成可评测、可复用的数据资产。</p>
               <ul class="module-list">
-                <li>通过标准：交付候选物决策档案，给出继续、停止、BD 或补实验建议</li>
-                <li>通过标准：raw data、negative samples、QC flags、失败原因和 wet reward 入库</li>
-                <li>通过标准：关键 ML benchmark 达到强基线 / SOTA，并沉淀 harness 和评测流程</li>
+                <li>外部伙伴通过标准：交付候选物决策档案，给出继续、停止、BD 或补实验建议</li>
+                <li>AGI4Sci 平台通过标准：raw data、negative samples、QC flags、失败原因、wet reward、专家 rubric 和工具轨迹入库</li>
+                <li>AI4AI 方法通过标准：关键 ML benchmark 达到强基线，并沉淀 harness、评测流程和失败复盘模板</li>
               </ul>
             </article>
             <article class="milestone">
               <span class="time">12-18 个月</span>
-              <h3>判断可复制性</h3>
-              <p>判断项目工作区、交付档案、实验数据包和底层 harness 是否能复用到第二个客户或第二个项目。</p>
+              <h3>复制到第二个外部项目</h3>
+              <p>不以自营具体科学案例来源为目标，而是判断同一套 AGI4Sci 平台能否接入第二个外部伙伴项目，并显著降低启动成本、交付周期和人工组织成本。</p>
               <ul class="module-list">
-                <li>通过标准：第二个项目启动成本显著下降，模板和数据标准可复用</li>
-                <li>通过标准：形成可销售的项目工作区 / 私有部署判断</li>
+                <li>外部伙伴通过标准：第二个外部项目能复用 target intake、expert rubric、实验数据模板和决策档案结构</li>
+                <li>AGI4Sci 平台通过标准：project room、memory graph、tool orchestration、reward ledger 和 harness 可复用</li>
+                <li>经营通过标准：判断是否继续做垂直 project room、私有部署或企业 workflow，而不是扩张重资产实验能力</li>
               </ul>
             </article>
           </div>
@@ -444,7 +468,7 @@
               <h2 id="resource-title">所需资源支持</h2>
             </div>
             <p>
-              按衔远当前阶段，建议采用 5200 万元 / 年验证版：用小而完整的核心团队，配常态 64 张 H200，把第一年重点压到 1 条可收费项目闭环、1 个关键 ML benchmark 和必要的外部实验验证上。
+              按衔远当前阶段采用 5200 万元 / 年验证版：用小而完整的核心团队，配常态 64 张 H200，把第一年重点压到 1 条可收费项目闭环、1 个关键 ML benchmark 和必要的外部实验验证上。
             </p>
           </div>
 
@@ -452,7 +476,7 @@
             <article class="decision">
               <h3>核心团队</h3>
               <ol>
-                <li>全职员工：第一年 6 HC，覆盖 AI4Sci 负责人、ML research、训练评测、平台工程、数据工程、蛋白 / 抗体科学或产品交付。</li>
+                <li>全职员工：第一年 6 HC，覆盖 AGI4Sci 平台负责人、ML research、训练评测、平台工程、数据工程、蛋白 / 抗体科学或产品交付。</li>
                 <li>实习生 / 访问学生：10-14 HC，主要支持 benchmark、数据清洗、文献证据整理、评测、实验数据标注和项目材料整理。</li>
                 <li>组织方式：顾问、IP 和合作成本不单列预算，必要工作并入全职团队职责、实验项目合同或数据库 / 软件采购。</li>
               </ol>
@@ -490,7 +514,7 @@
           <div class="resource-note">
             <h3>对标口径</h3>
             <p>
-              以上不是头部创业公司的重资产标准档，而是衔远第一年更可落地的 5200 万元 / 年版本。预算重点从大团队转向 6 个核心 owner、常态 GPU、模型调用、实习 / 访问学生杠杆和外部实验验证；若付费项目、数据飞轮和实验回流都成立，再升级到 8000 万-1.5 亿元 / 年的标准档。
+              下面是 5200 万元 / 年验证版的预算拆分。
             </p>
             <table class="budget-table">
               <thead>
@@ -503,7 +527,7 @@
               <tbody>
                 <tr>
                   <td>全职团队</td>
-                  <td>6 人；覆盖 AI4Sci 负责人、ML research、训练评测、平台工程、数据工程、蛋白 / 抗体科学或产品交付</td>
+                  <td>6 人；覆盖 AGI4Sci 平台负责人、ML research、训练评测、平台工程、数据工程、蛋白 / 抗体科学或产品交付</td>
                   <td>1000 万</td>
                 </tr>
                 <tr>
@@ -552,47 +576,6 @@
               <li><a href="https://pitchhub.36kr.com/project/1678547907048450">深势科技</a>：C 轮超 8 亿元人民币，是国内 AI for Science 平台化公司的重要参照。</li>
               <li><a href="https://www.lila.ai/news/announcing-the-close-of-our-series-a">Lila Sciences</a>、<a href="https://techcrunch.com/2025/09/30/former-openai-and-deepmind-researchers-raise-whopping-300m-seed-to-automate-science/">Periodic Labs</a>：代表自建实验设施和大型 AI Scientist 平台的上限，不作为衔远第一年默认预算。</li>
             </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="decisions" class="section white" aria-labelledby="decisions-title">
-        <div class="inner">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">09 · Decision Defaults</p>
-              <h2 id="decisions-title">建议直接拍板的执行方案</h2>
-            </div>
-            <p>
-              第一阶段不把问题继续摊开，而是先设定一组可执行默认值：用项目收入买时间，用 wet reward 买真实反馈，用 Project Room 沉淀平台雏形。
-            </p>
-          </div>
-
-          <div class="asset-grid">
-            <article class="asset">
-              <h3>第一批客户优先级</h3>
-              <p>先打 ADC / 双抗 / TCE / biologics 项目型 biotech，典型 20-200 人、有明确 target 或 candidate、有 8-12 周 continue / kill / BD 压力。大药企做单项目标杆试点，不作为第一收入主线。</p>
-            </article>
-            <article class="asset">
-              <h3>第一单包装</h3>
-              <p>首单卖 Target-to-Binder Sprint：候选生成、证据整理、专家评审、小规模 wet validation 和最终决策档案。Science Agent OS 只是交付底座，等 2-3 个项目后再转平台订阅、私有部署或企业 workflow。</p>
-            </article>
-            <article class="asset">
-              <h3>Wet reward 范围</h3>
-              <p>第一阶段只覆盖 expression / binding / developability，保证周期短、口径清楚、能形成候选排序。Phenotype reward 单独作为第二个 pilot，不塞进第一条闭环。</p>
-            </article>
-            <article class="asset">
-              <h3>数据权利默认值</h3>
-              <p>客户原始数据、项目材料、序列和实验结果默认不用于训练。schema、rubric、workflow、匿名统计、授权数据和内部生成轨迹可用于平台改进，销售和法务一开始就按这个边界沟通。</p>
-            </article>
-            <article class="asset">
-              <h3>资源执行版本</h3>
-              <p>第一年按 5200 万元验证版推进，而不是按重资产部门配置启动。先用 6 个核心全职、10-14 名实习 / 访问学生、常态 64 张 H200 等效卡和 2 家 wet-lab partner 跑通闭环；付费项目、实验回流和复用成本成立后再升级。</p>
-            </article>
-            <article class="asset">
-              <h3>第一个 target 选择</h3>
-              <p>选择公开证据较多、结构或抗体设计空间明确、IP 不过度敏感、8-12 周能看到 expression / binding 信号的 target。暂时避开临床路径复杂、依赖高敏内部数据或验证结果难讲清的项目。</p>
-            </article>
           </div>
         </div>
       </section>
