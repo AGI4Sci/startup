@@ -227,7 +227,7 @@
               <h2 id="architecture-title">AI4AI 核心能力</h2>
             </div>
             <p>
-              这部分是资源申请的技术主体。Sci 项目会变化，但下面几块能力要留在衔远内部，持续复用。
+              这部分是资源申请的技术主体。Sci 项目会变化，但 agent harness、科研环境接口、reward、数据和模型改进能力要留在衔远内部，持续复用。
             </p>
           </div>
 
@@ -235,7 +235,7 @@
             <div class="layers" aria-label="AI4AI 核心技术架构">
               <div class="layer">
                 <div class="layer-index">1</div>
-                <div class="layer-body"><b>Agent Runtime &amp; Project Room</b><span>把项目空间、任务计划、权限、审批、预算、日志和交付导出放在一起，让复杂任务能被组织起来</span></div>
+                <div class="layer-body"><b>Agent Harness &amp; Evolution</b><span>把任务计划、工具调用、权限审批、执行日志、回放评测和交付导出放在一起，让 agent 能在真实项目中持续迭代</span></div>
               </div>
               <div class="layer">
                 <div class="layer-index">2</div>
@@ -243,41 +243,46 @@
               </div>
               <div class="layer">
                 <div class="layer-index">3</div>
-                <div class="layer-body"><b>Scientific Tool Orchestration</b><span>统一接入文献检索、结构 / 序列模型、数据库 API、候选生成、实验伙伴接口，并约束输入输出</span></div>
+                <div class="layer-body"><b>Scientific Environment Interface</b><span>把文献 / 模型 / 数据库工具、外部专家反馈和湿实验反馈接进来，形成可调用、可记录、可验收的协作接口</span></div>
               </div>
               <div class="layer">
                 <div class="layer-index">4</div>
-                <div class="layer-body"><b>Review &amp; Feedback Ledger</b><span>记录专家评审、候选排序、人工修改、质控标记、表达 / 结合 / 成药性和肿瘤模型反馈</span></div>
+                <div class="layer-body"><b>Review &amp; Reward Ledger</b><span>把专家判断、实验结果、QC、失败原因和候选排序沉淀为 reward、评测记录和改进依据</span></div>
               </div>
               <div class="layer">
                 <div class="layer-index">5</div>
                 <div class="layer-body"><b>Training Data Compiler</b><span>把可授权的项目轨迹整理成训练样本、评测样本、偏好数据、纠错样本和失败恢复样本</span></div>
+              </div>
+              <div class="layer">
+                <div class="layer-index">6</div>
+                <div class="layer-body"><b>Model Evaluation &amp; Improvement</b><span>用评测集、回放轨迹和失败样本检查模型与 agent 表现，推动下一轮模型、工具策略和任务流程改进</span></div>
               </div>
             </div>
 
             <div class="flow">
               <div class="asset-panel">
                 <h3>真正要沉淀的资产</h3>
-                <p>每个项目带来可复用、可评测、可训练的系统资产。</p>
-                <div class="asset-strip" aria-label="四类可复用资产">
-                  <div class="asset-pill"><b>Scientific Memory</b><span>可追溯事实层</span></div>
-                  <div class="asset-pill"><b>Agent Harness</b><span>执行 / 回放 / 评测框架</span></div>
-                  <div class="asset-pill"><b>Feedback Ledger</b><span>专家与实验判断</span></div>
-                  <div class="asset-pill"><b>Agent-ready Data</b><span>可训练、可评测；不是原始数据</span></div>
+                <p>每个真实项目结束后，留下的不只是交付报告，而是一组能继续复用的系统资产。</p>
+                <div class="asset-strip" aria-label="真实项目沉淀的四类资产">
+                  <div class="asset-pill"><b>任务轨迹</b><span>任务计划、工具调用、审批节点、执行回放</span></div>
+                  <div class="asset-pill"><b>证据记忆</b><span>证据来源、版本、冲突结论和失败样本</span></div>
+                  <div class="asset-pill"><b>Reward 记录</b><span>专家判断、实验结果、QC 和候选排序</span></div>
+                  <div class="asset-pill"><b>Agent-ready 数据</b><span>授权范围内的训练 / 评测材料，不是原始数据</span></div>
                 </div>
               </div>
               <div class="moat-panel">
                 <h3>长期壁垒</h3>
                 <div class="evolution-ring" aria-label="AI agent 递归进化循环">
                   <div class="ring-center">
-                    <b>递归进化</b>
-                    <span>每轮任务都反哺下一轮</span>
+                    <b>能力闭环</b>
+                    <span>每轮项目都反哺下一轮</span>
                   </div>
-                  <div class="ring-step step-lab"><em>1</em><b>科研实验环境</b><span>真实任务与反馈</span></div>
+                  <div class="ring-step step-runtime"><em>1</em><b>Harness &amp; Evolution</b><span>执行、回放和迭代</span></div>
                   <div class="ring-step step-memory"><em>2</em><b>科学记忆</b><span>证据与失败样本</span></div>
-                  <div class="ring-step step-harness"><em>3</em><b>Agent harness</b><span>执行 / 回放 / 评测</span></div>
-                  <div class="ring-step step-data"><em>4</em><b>Agent-ready data</b><span>轨迹 / 偏好 / 纠错</span></div>
-                  <div class="ring-step step-model"><em>5</em><b>模型能力</b><span>规划与失败恢复</span></div>
+                  <div class="ring-step step-environment"><em>3</em><b>科研环境接口</b><span>工具 + 专家 / 湿实验反馈</span></div>
+                  <div class="ring-step step-ledger"><em>4</em><b>Reward Ledger</b><span>判断转成 reward</span></div>
+                  <div class="ring-step step-data"><em>5</em><b>Agent-ready data</b><span>轨迹 / 偏好 / 纠错</span></div>
+                  <div class="ring-step step-model"><em>6</em><b>Model Improvement</b><span>评测和能力升级</span></div>
                 </div>
               </div>
             </div>
