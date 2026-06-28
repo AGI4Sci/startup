@@ -1,0 +1,1403 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI4AI × AI4Sci | Investor Brief</title>
+  <style>
+    :root {
+      --ink: #171a1d;
+      --muted: #5c6670;
+      --soft: #f6f7f4;
+      --paper: #ffffff;
+      --line: #d9ded6;
+      --green: #15845f;
+      --cyan: #1b7f91;
+      --coral: #c74754;
+      --gold: #a87900;
+      --black: #0d0f10;
+      --shadow: 0 22px 50px rgba(23, 26, 29, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--soft);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+      line-height: 1.55;
+      letter-spacing: 0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .shell {
+      min-height: 100vh;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 14px 32px;
+      color: #f7faf7;
+      background: rgba(13, 15, 16, 0.94);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(14px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 220px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      width: 28px;
+      height: 28px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3px;
+    }
+
+    .brand-mark span {
+      display: block;
+      border-radius: 4px;
+    }
+
+    .brand-mark span:nth-child(1) { background: var(--green); }
+    .brand-mark span:nth-child(2) { background: var(--cyan); }
+    .brand-mark span:nth-child(3) { background: var(--coral); }
+    .brand-mark span:nth-child(4) { background: var(--gold); }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      overflow-x: auto;
+      white-space: nowrap;
+      scrollbar-width: none;
+    }
+
+    .nav::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nav a {
+      padding: 8px 10px;
+      color: rgba(247, 250, 247, 0.76);
+      font-size: 14px;
+      border-radius: 6px;
+    }
+
+    .nav a:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .section {
+      padding: 72px 32px;
+    }
+
+    .section.dark {
+      color: #f7faf7;
+      background: var(--black);
+    }
+
+    .section.white {
+      background: var(--paper);
+    }
+
+    .section.alt {
+      background: #edf4ef;
+    }
+
+    .inner {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+    }
+
+    .hero {
+      display: grid;
+      align-items: start;
+      padding: 86px 32px 72px;
+      color: #f7faf7;
+      background:
+        linear-gradient(120deg, rgba(13, 15, 16, 0.96), rgba(13, 15, 16, 0.82)),
+        repeating-linear-gradient(90deg, rgba(255,255,255,0.06) 0 1px, transparent 1px 84px),
+        repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0 1px, transparent 1px 84px),
+        #101312;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
+      gap: 46px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 18px;
+      color: #a9d9c7;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin-bottom: 22px;
+      font-size: 56px;
+      line-height: 1.08;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin-bottom: 16px;
+      font-size: 34px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 760px;
+      margin-bottom: 30px;
+      color: rgba(247, 250, 247, 0.84);
+      font-size: 20px;
+    }
+
+    .hero-points {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .hero-point {
+      min-height: 150px;
+      padding: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.055);
+    }
+
+    .hero-point strong {
+      display: block;
+      margin-bottom: 8px;
+      color: #fff;
+      font-size: 15px;
+    }
+
+    .hero-point p {
+      margin: 0;
+      color: rgba(247, 250, 247, 0.74);
+      font-size: 14px;
+    }
+
+    .hero-point:nth-child(1) { border-top: 4px solid var(--green); }
+    .hero-point:nth-child(2) { border-top: 4px solid var(--cyan); }
+    .hero-point:nth-child(3) { border-top: 4px solid var(--coral); }
+
+    .system-map {
+      padding: 22px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.06);
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.2);
+    }
+
+    .map-title {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 18px;
+      color: rgba(247, 250, 247, 0.7);
+      font-size: 13px;
+    }
+
+    .map-core {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .map-node {
+      min-height: 92px;
+      padding: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 8px;
+      background: rgba(13, 15, 16, 0.55);
+    }
+
+    .map-node b {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 16px;
+    }
+
+    .map-node span {
+      color: rgba(247, 250, 247, 0.68);
+      font-size: 13px;
+    }
+
+    .map-node.green { border-left: 5px solid var(--green); }
+    .map-node.cyan { border-left: 5px solid var(--cyan); }
+    .map-node.coral { border-left: 5px solid var(--coral); }
+    .map-node.gold { border-left: 5px solid var(--gold); }
+
+    .map-center {
+      margin: 12px 0;
+      padding: 18px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      background: #f7faf7;
+      color: var(--ink);
+    }
+
+    .map-center b {
+      display: block;
+      font-size: 20px;
+    }
+
+    .map-center span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .map-stack {
+      display: grid;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .stack-row {
+      display: grid;
+      grid-template-columns: 30px 1fr;
+      align-items: center;
+      min-height: 44px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .stack-row em {
+      display: grid;
+      place-items: center;
+      height: 100%;
+      color: #fff;
+      font-style: normal;
+      font-size: 12px;
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.14);
+    }
+
+    .stack-row span {
+      padding: 10px 12px;
+      color: rgba(247, 250, 247, 0.82);
+      font-size: 13px;
+    }
+
+    .section-heading {
+      display: grid;
+      grid-template-columns: minmax(0, 0.78fr) minmax(280px, 0.42fr);
+      gap: 36px;
+      align-items: end;
+      margin-bottom: 30px;
+    }
+
+    .section-heading p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .dark .section-heading p {
+      color: rgba(247, 250, 247, 0.72);
+    }
+
+    .kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .kpi {
+      padding: 18px;
+      min-height: 118px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+
+    .kpi .num {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 28px;
+      font-weight: 800;
+    }
+
+    .kpi .label {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .strategy-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .strategy {
+      min-height: 260px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+
+    .strategy .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .tag::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    .strategy:nth-child(1) .tag { color: var(--green); }
+    .strategy:nth-child(2) .tag { color: var(--cyan); }
+    .strategy:nth-child(3) .tag { color: var(--coral); }
+
+    .strategy p {
+      color: var(--muted);
+    }
+
+    .strategy ul,
+    .module-list,
+    .risk-list {
+      margin: 14px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .strategy li,
+    .module-list li,
+    .risk-list li {
+      position: relative;
+      padding-left: 18px;
+      margin: 8px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .strategy li::before,
+    .module-list li::before,
+    .risk-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 7px;
+      height: 2px;
+      background: var(--ink);
+    }
+
+    .architecture {
+      display: grid;
+      grid-template-columns: minmax(340px, 0.48fr) minmax(0, 0.52fr);
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .layers {
+      display: grid;
+      gap: 10px;
+    }
+
+    .layer {
+      display: grid;
+      grid-template-columns: 46px 1fr;
+      min-height: 80px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      overflow: hidden;
+    }
+
+    .layer-index {
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-weight: 800;
+      background: var(--ink);
+    }
+
+    .layer-body {
+      padding: 14px 16px;
+    }
+
+    .layer-body b {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .layer-body span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .flow {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 14px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #101312;
+      color: #f7faf7;
+    }
+
+    .flow h3 {
+      margin-bottom: 6px;
+    }
+
+    .flow p {
+      color: rgba(247, 250, 247, 0.7);
+    }
+
+    .flywheel {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      align-content: center;
+    }
+
+    .wheel-step {
+      min-height: 118px;
+      padding: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .wheel-step b {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .wheel-step span {
+      color: rgba(247, 250, 247, 0.7);
+      font-size: 13px;
+    }
+
+    .wheel-step:nth-child(1) { border-top: 4px solid var(--green); }
+    .wheel-step:nth-child(2) { border-top: 4px solid var(--cyan); }
+    .wheel-step:nth-child(3) { border-top: 4px solid var(--coral); }
+    .wheel-step:nth-child(4) { border-top: 4px solid var(--gold); }
+
+    .modules {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .module {
+      min-height: 250px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+
+    .module-icon {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 16px;
+      border-radius: 8px;
+      color: #fff;
+      font-weight: 800;
+      background: var(--ink);
+    }
+
+    .module:nth-child(1) .module-icon { background: var(--green); }
+    .module:nth-child(2) .module-icon { background: var(--cyan); }
+    .module:nth-child(3) .module-icon { background: var(--coral); }
+    .module:nth-child(4) .module-icon { background: var(--gold); }
+    .module:nth-child(5) .module-icon { background: #6d7c3f; }
+    .module:nth-child(6) .module-icon { background: #676a70; }
+
+    .scene-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .scene {
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.055);
+      overflow: hidden;
+    }
+
+    .scene-head {
+      padding: 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .scene-head p {
+      margin: 0;
+      color: rgba(247, 250, 247, 0.72);
+    }
+
+    .loop {
+      display: grid;
+      gap: 8px;
+      padding: 24px;
+    }
+
+    .loop-step {
+      display: grid;
+      grid-template-columns: 34px 1fr;
+      align-items: center;
+      min-height: 48px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .loop-step em {
+      display: grid;
+      place-items: center;
+      height: 100%;
+      color: #fff;
+      font-style: normal;
+      font-size: 12px;
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.14);
+    }
+
+    .loop-step span {
+      padding: 10px 12px;
+      color: rgba(247, 250, 247, 0.82);
+      font-size: 14px;
+    }
+
+    .asset-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .asset {
+      min-height: 230px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-top: 5px solid var(--ink);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+
+    .asset:nth-child(1) { border-top-color: var(--green); }
+    .asset:nth-child(2) { border-top-color: var(--cyan); }
+    .asset:nth-child(3) { border-top-color: var(--coral); }
+    .asset:nth-child(4) { border-top-color: var(--gold); }
+
+    .asset p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .roadmap {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--paper);
+    }
+
+    .milestone {
+      min-height: 320px;
+      padding: 24px;
+      border-right: 1px solid var(--line);
+    }
+
+    .milestone:last-child {
+      border-right: 0;
+    }
+
+    .milestone .time {
+      display: inline-block;
+      margin-bottom: 18px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .milestone h3 {
+      min-height: 50px;
+    }
+
+    .milestone p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: minmax(320px, 0.42fr) 1fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .north-star {
+      padding: 28px;
+      border-radius: 8px;
+      background: var(--ink);
+      color: #f7faf7;
+    }
+
+    .north-star strong {
+      display: block;
+      margin-bottom: 14px;
+      color: #a9d9c7;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    .north-star p {
+      margin: 0;
+      font-size: 26px;
+      line-height: 1.28;
+      font-weight: 800;
+    }
+
+    .metric-table {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .metric {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+
+    .metric b {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .decision-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+    }
+
+    .decision {
+      min-height: 250px;
+      padding: 22px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .decision h3 {
+      color: #fff;
+    }
+
+    .decision ol {
+      margin: 14px 0 0;
+      padding-left: 20px;
+    }
+
+    .decision li {
+      margin: 10px 0;
+      color: rgba(247, 250, 247, 0.74);
+      font-size: 14px;
+    }
+
+    .closing {
+      padding: 42px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .closing p {
+      max-width: 900px;
+      margin-bottom: 0;
+      color: rgba(247, 250, 247, 0.82);
+      font-size: 22px;
+      line-height: 1.45;
+    }
+
+    @media (max-width: 1120px) {
+      .hero-grid {
+        grid-template-columns: minmax(0, 0.95fr) minmax(330px, 0.85fr);
+        gap: 28px;
+      }
+
+      h1 {
+        font-size: 46px;
+      }
+
+      .lead {
+        font-size: 18px;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 14px 20px;
+      }
+
+      .hero,
+      .section {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .hero-grid,
+      .section-heading,
+      .architecture,
+      .metrics {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+
+      h2 {
+        font-size: 29px;
+      }
+
+      .hero-points,
+      .strategy-grid,
+      .modules,
+      .scene-grid,
+      .asset-grid,
+      .roadmap,
+      .decision-grid,
+      .kpi-strip {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .milestone {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .milestone:nth-last-child(-n + 2) {
+        border-bottom: 0;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .brand {
+        min-width: 0;
+        white-space: normal;
+      }
+
+      .nav {
+        width: 100%;
+        flex-wrap: wrap;
+        overflow-x: visible;
+        white-space: normal;
+      }
+
+      .nav a {
+        padding: 7px 8px;
+        font-size: 13px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      .lead {
+        font-size: 18px;
+      }
+
+      .hero-points,
+      .strategy-grid,
+      .modules,
+      .scene-grid,
+      .asset-grid,
+      .roadmap,
+      .decision-grid,
+      .kpi-strip,
+      .metric-table,
+      .map-core,
+      .flywheel {
+        grid-template-columns: 1fr;
+      }
+
+      .milestone:nth-last-child(2) {
+        border-bottom: 1px solid var(--line);
+      }
+    }
+
+    @media print {
+      .topbar {
+        position: static;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .section {
+        break-inside: avoid;
+        padding-top: 36px;
+        padding-bottom: 36px;
+      }
+
+      body {
+        background: #fff;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="AI4AI AI4Sci Investor Brief">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        AI4AI × AI4Sci
+      </a>
+      <nav class="nav" aria-label="页面导航">
+        <a href="#goal">目标</a>
+        <a href="#users">用户</a>
+        <a href="#offer">产品</a>
+        <a href="#architecture">架构</a>
+        <a href="#scenes">闭环</a>
+        <a href="#roadmap">路线</a>
+        <a href="#resources">资源</a>
+        <a href="#decisions">待确认</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="inner hero-grid">
+          <div>
+            <p class="eyebrow">Investor Entry</p>
+            <h1 id="hero-title">AI4AI 平台牵引 AI4Sci 垂直闭环</h1>
+            <p class="lead">
+              面向有真实研发任务的生命科学团队，先交付 Target-to-Binder 项目结果，再把科学资源、专家审查、实验反馈和 agent 轨迹沉淀成可复用平台。
+            </p>
+            <div class="hero-points" aria-label="核心定义">
+              <div class="hero-point">
+                <strong>目标</strong>
+                <p>建设能执行、记录、审查、训练和复盘科研任务的 Science Agent OS。</p>
+              </div>
+              <div class="hero-point">
+                <strong>用户</strong>
+                <p>20-200 人 biotech / discovery group，有 target 和 wet-loop 需求，但缺完整 AI platform team。</p>
+              </div>
+              <div class="hero-point">
+                <strong>产品</strong>
+                <p>第一年采用 project-based sprint + confidential project room + evidence dossier。</p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="system-map" aria-label="投资人理解路径">
+            <div class="map-title">
+              <span>Operating Model</span>
+              <span>Customer Value → Platform Asset</span>
+            </div>
+            <div class="map-core">
+              <div class="map-node green">
+                <b>Customer Deliverable</b>
+                <span>Target-to-Binder Sprint、Candidate Decision Package、wet validation review</span>
+              </div>
+              <div class="map-node cyan">
+                <b>Platform Product</b>
+                <span>Scientific Project Room、Memory / Tool / Review & Reward / Training Data Engines</span>
+              </div>
+            </div>
+            <div class="map-center">
+              <b>Science Agent OS</b>
+              <span>把科研项目变成可审计、可交付、可训练的系统</span>
+            </div>
+            <div class="map-core">
+              <div class="map-node coral">
+                <b>Wet Reward</b>
+                <span>expression、binding、developability、phenotype、toxicity</span>
+              </div>
+              <div class="map-node gold">
+                <b>AI-Ready Training Data</b>
+                <span>SFT / preference / critique / failure recovery / RL-ready dataset</span>
+              </div>
+            </div>
+            <div class="map-stack">
+              <div class="stack-row"><em>1</em><span>第一单卖项目结果，不直接卖抽象平台</span></div>
+              <div class="stack-row"><em>2</em><span>Project Room 是交付载体，也是平台产品原型</span></div>
+              <div class="stack-row"><em>3</em><span>每个项目同时产生客户判断材料和训练资产</span></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="goal" class="section white" aria-labelledby="goal-title">
+        <div class="inner">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">01 · Goal</p>
+              <h2 id="goal-title">目标与边界</h2>
+            </div>
+            <p>
+              创业方案先回答三件事：最终要建设什么、第一年验证什么、哪些资产会形成长期复利。
+            </p>
+          </div>
+
+          <div class="strategy-grid">
+            <article class="strategy">
+              <span class="tag">Company</span>
+              <h3>长期目标</h3>
+              <p>建设下一代科学研究基础设施：连接科学知识、计算工具、专家判断和实验反馈，支持 AI 在真实科研任务中持续改进。</p>
+              <ul>
+                <li><b>AI 自进化目标：</b>支撑 AI agent 多尺度递归改进：模型能力、科学记忆、agent harness（执行/记录/回放/评测框架）和科研实验环境共同进化。</li>
+                <li><b>科学影响力目标：</b>让 AI 参与真实科学发现：从文献理解、假设生成、实验设计到结果复盘，形成可复现、可审查、可发表的科研过程。</li>
+                <li><b>产业影响力目标：</b>把科研线索转化为产业方能判断、能行动的项目资产：靶点判断、候选设计、实验验证、对外合作、临床前申报或产品化决策。</li>
+              </ul>
+            </article>
+
+            <article class="strategy">
+              <span class="tag">Year 1</span>
+              <h3>第一年验证</h3>
+              <p>用 1-2 个生命科学项目验证三个目标，而不是追求项目数量或功能完整度。</p>
+              <ul>
+                <li>AI 自进化：Project Room + harness 能记录、回放并导出可训练 trajectory</li>
+                <li>科学影响力：形成可复现的 target evidence、候选设计、实验计划和结果复盘</li>
+                <li>产业影响力：交付 Candidate Decision Package，支持继续投入、停项或下一轮实验决策</li>
+              </ul>
+            </article>
+
+            <article class="strategy">
+              <span class="tag">Asset</span>
+              <h3>复利资产</h3>
+              <p>资产不只归入 Memory；Memory 是 source of truth，另外三类资产分别负责工具调用、科学判断和训练自进化。</p>
+              <ul>
+                <li>Scientific Memory Engine：文献、数据库、claim-evidence-provenance、项目状态</li>
+                <li>Scientific Tool Engine：深度学习模型、计算工具、数据库 API、MCP 服务、wet-lab 接口</li>
+                <li>Scientific Review & Reward Engine：expert taste、rubric、wet reward、human override</li>
+                <li>AI-Ready Training Data Engine：SFT、preference、agentic RL、agent self-evolve dataset</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="users" class="section white" aria-labelledby="users-title">
+        <div class="inner">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">02 · Users</p>
+              <h2 id="users-title">目标用户</h2>
+            </div>
+            <p>
+              第一批用户不是泛科研人群，而是有明确研发项目、真实实验反馈和付费动机的 discovery team。
+            </p>
+          </div>
+
+          <div class="strategy-grid">
+            <article class="strategy">
+              <span class="tag">ICP</span>
+              <h3>核心客户</h3>
+              <p>20-200 人规模的 biotech / discovery group；已有 target、disease hypothesis 或 biologics 项目；有 wet-lab 或稳定 CRO 合作。</p>
+              <ul>
+                <li>内部有 1-5 个 computational scientist</li>
+                <li>没有完整 AI platform team</li>
+                <li>需要更快形成候选和证据包</li>
+              </ul>
+            </article>
+
+            <article class="strategy">
+              <span class="tag">Buyer</span>
+              <h3>买方和使用者</h3>
+              <p>经济买方是 CEO、CSO、VP Discovery、BD Head、Program Lead；日常使用者是 protein engineer、computational biologist、assay lead、translational scientist。</p>
+              <ul>
+                <li>买方关心项目进度、证据质量和融资/BD 叙事</li>
+                <li>使用者关心候选排序、实验计划和复盘效率</li>
+                <li>专家 reviewer 贡献 taste 和纠偏信号</li>
+              </ul>
+            </article>
+
+            <article class="strategy">
+              <span class="tag">Not First</span>
+              <h3>暂不优先</h3>
+              <p>泛科研助手、高校 PI 通用写作工具、大药企总部级平台采购，都不适合作为最早期验证主线。</p>
+              <ul>
+                <li>泛科研需求分散，数据闭环弱</li>
+                <li>高校场景容易退化成 RAG / 写作</li>
+                <li>大药企适合作 lighthouse pilot</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="offer" class="section dark" aria-labelledby="offer-title">
+        <div class="inner">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">03 · Product Offer</p>
+              <h2 id="offer-title">产品形态</h2>
+            </div>
+            <p>
+              第一阶段按“服务辅助的软件产品”售卖：客户买项目结果，我们沉淀平台模块、数据结构和训练资产。
+            </p>
+          </div>
+
+          <div class="decision-grid">
+            <article class="decision">
+              <h3>Target-to-Binder Sprint</h3>
+              <ol>
+                <li>8-12 周项目包。</li>
+                <li>交付 Target Card、candidate set、expert ranking、wet validation plan/result review。</li>
+                <li>适合早中期 biotech、BD 前项目、PI 孵化项目。</li>
+              </ol>
+            </article>
+
+            <article class="decision">
+              <h3>Confidential Project Room</h3>
+              <ol>
+                <li>客户和内部团队共同使用的项目空间。</li>
+                <li>承载 target、evidence、candidate、experiment、review、decision log。</li>
+                <li>客户数据 no-training-by-default，后续升级 dedicated tenant / VPC。</li>
+              </ol>
+            </article>
+
+            <article class="decision">
+              <h3>Evidence + Dataset Package</h3>
+              <ol>
+                <li>给客户：BD / IND / paper-ready research dossier。</li>
+                <li>给内部：SFT、preference、critique、failure recovery、RL transition。</li>
+                <li>同一项目输出人类可读和机器可读两类资产。</li>
+              </ol>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="architecture" class="section alt" aria-labelledby="architecture-title">
+        <div class="inner">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">04 · AI4AI Framework</p>
+              <h2 id="architecture-title">平台架构</h2>
+            </div>
+            <p>
+              架构只保留投资人需要理解的能力边界：Memory、Tool、Review & Reward、Dossier、Training Data、Execution。
+            </p>
+          </div>
+
+          <div class="architecture">
+            <div class="layers" aria-label="AI4AI 平台架构">
+              <div class="layer">
+                <div class="layer-index">1</div>
+                <div class="layer-body"><b>Scientific Memory Engine</b><span>文献、数据库、claim-evidence-provenance、项目状态、Agent-facing State Packet</span></div>
+              </div>
+              <div class="layer">
+                <div class="layer-index">2</div>
+                <div class="layer-body"><b>Scientific Tool Engine</b><span>深度学习模型、结构预测、计算工具、数据库 API、MCP 服务、wet-lab partner 接口</span></div>
+              </div>
+              <div class="layer">
+                <div class="layer-index">3</div>
+                <div class="layer-body"><b>Scientific Review & Reward Engine</b><span>expert taste、rubric、candidate ranking、critique、human override、wet reward；Reward Ledger 作为记录层</span></div>
+              </div>
+              <div class="layer">
+                <div class="layer-index">4</div>
+                <div class="layer-body"><b>Research Dossier Agent</b><span>面向人类决策的 paper-ready、BD-ready、IND-ready evidence package</span></div>
+              </div>
+              <div class="layer">
+                <div class="layer-index">5</div>
+                <div class="layer-body"><b>AI-Ready Training Data Engine</b><span>Trajectory Compiler 输出 SFT、preference、critique、failure recovery、RL-ready transition</span></div>
+              </div>
+              <div class="layer">
+                <div class="layer-index">6</div>
+                <div class="layer-body"><b>Protocol & Execution</b><span>任务状态机、审批 gate、权限审计、预算、安全、工具调用边界</span></div>
+              </div>
+            </div>
+
+            <div class="flow">
+              <div>
+                <h3>资产边界</h3>
+                <p>Scientific Memory 是 source of truth；Tool Engine 负责可调用能力；Review & Reward Engine 负责科学判断；Training Data Engine 负责自进化数据。</p>
+              </div>
+              <div class="flywheel" aria-label="四类复利资产">
+                <div class="wheel-step"><b>Memory</b><span>我们知道什么、证据从哪里来、项目状态是什么</span></div>
+                <div class="wheel-step"><b>Tool</b><span>Agent 能调用什么能力、输出如何复现</span></div>
+                <div class="wheel-step"><b>Review & Reward</b><span>什么是好结果、谁判断、判断是否可训练</span></div>
+                <div class="wheel-step"><b>Training Data</b><span>哪些轨迹能训练下一代科研 agent</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="scenes" class="section dark" aria-labelledby="scenes-title">
+        <div class="inner">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">05 · AI4Sci Closed Loop</p>
+              <h2 id="scenes-title">垂直闭环</h2>
+            </div>
+            <p>
+              Target-to-Binder 是第一条可快速交付的闭环；其它场景沿同一证据链扩展。
+            </p>
+          </div>
+
+          <div class="scene-grid">
+            <article class="scene">
+              <div class="scene-head">
+                <h3>证据链</h3>
+                <p>每一步都要产生客户交付物和可回流数据。</p>
+              </div>
+              <div class="loop">
+                <div class="loop-step"><em>1</em><span>Target / hypothesis：evidence、assay feasibility、kill criteria</span></div>
+                <div class="loop-step"><em>2</em><span>Candidate design：binder / antibody / nanobody generation and ranking</span></div>
+                <div class="loop-step"><em>3</em><span>Wet validation：expression、purification、binding、developability</span></div>
+                <div class="loop-step"><em>4</em><span>Phenotype / safety：organoid、organ-chip、HCI、toxicity、mechanism reward</span></div>
+                <div class="loop-step"><em>5</em><span>Dossier：continue / kill、BD、IND、publication-grade evidence package</span></div>
+                <div class="loop-step"><em>6</em><span>Training：review、failure、reward、trajectory 编译为训练数据</span></div>
+              </div>
+            </article>
+
+            <article class="scene">
+              <div class="scene-head">
+                <h3>第一年垂直产品</h3>
+                <p>不是只做一个场景，而是用第一个场景启动闭环。</p>
+              </div>
+              <div class="loop">
+                <div class="loop-step"><em>1</em><span>Target Intelligence & Hypothesis Review</span></div>
+                <div class="loop-step"><em>2</em><span>Target-to-Binder Candidate Decision Package</span></div>
+                <div class="loop-step"><em>3</em><span>Binder Optimization & Developability Loop</span></div>
+                <div class="loop-step"><em>4</em><span>Organ-chip / Organoid Phenotype Reward Package</span></div>
+                <div class="loop-step"><em>5</em><span>BD / IND / Publication-grade Research Dossier</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="roadmap" class="section white" aria-labelledby="roadmap-title">
+        <div class="inner">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">06 · Roadmap</p>
+              <h2 id="roadmap-title">第一年验证路线</h2>
+            </div>
+            <p>
+              路线图按三个目标的最小证据组织：能训练、能复现、能决策。
+            </p>
+          </div>
+
+          <div class="roadmap">
+            <article class="milestone">
+              <span class="time">0-3 个月</span>
+              <h3>准备可验证项目</h3>
+              <p>选定 1 个公开或低敏 target，搭建 Project Room、harness、Memory schema、review rubric 和数据权利条款。</p>
+              <ul class="module-list">
+                <li>Target Card + kill criteria</li>
+                <li>trace / replay / reward logging v0</li>
+              </ul>
+            </article>
+            <article class="milestone">
+              <span class="time">3-6 个月</span>
+              <h3>Pilot A：Target-to-Binder</h3>
+              <p>围绕 1 个 target 生成 50-300 条抗体 / 纳米抗体候选，完成专家排序和小规模 wet validation。</p>
+              <ul class="module-list">
+                <li>expression / binding / developability reward</li>
+                <li>review、failure、negative samples 入库</li>
+              </ul>
+            </article>
+            <article class="milestone">
+              <span class="time">6-12 个月</span>
+              <h3>Pilot B：Reward 扩展</h3>
+              <p>若资源允许，接入 developability、cell phenotype、organoid / organ-chip、HCI 或 dose-response readout。</p>
+              <ul class="module-list">
+                <li>统一 reward schema + metadata</li>
+                <li>可用于下一轮候选排序</li>
+              </ul>
+            </article>
+            <article class="milestone">
+              <span class="time">12-18 个月</span>
+              <h3>平台化判断</h3>
+              <p>基于 1-2 个项目判断是否进入平台化销售：Project Room、private deployment、更多 workflow。</p>
+              <ul class="module-list">
+                <li>Candidate Decision Package 可复用</li>
+                <li>AI-ready training dataset v0</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="metrics" class="section white" aria-labelledby="metrics-title">
+        <div class="inner">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">07 · Metrics</p>
+              <h2 id="metrics-title">验收指标</h2>
+            </div>
+            <p>
+              指标对应三类目标：AI 是否变得可训练，科研过程是否可信，客户是否能据此行动。
+            </p>
+          </div>
+
+          <div class="metrics">
+            <div class="north-star">
+              <strong>North Star</strong>
+              <p>1-2 个真实项目能否同时产出客户决策、可复现科研过程和可训练 agent 轨迹</p>
+            </div>
+            <div class="metric-table">
+              <div class="metric"><b>AI 自进化</b><span>state-action-observation-review-reward 轨迹完整；可回放；可导出 SFT / preference / RL-ready dataset v0。</span></div>
+              <div class="metric"><b>科学影响力</b><span>Target Card、证据审查、实验计划、原始结果、失败原因和复盘可复现、可审查。</span></div>
+              <div class="metric"><b>产业影响力</b><span>8-12 周交付 Candidate Decision Package，客户能据此 continue / kill / next experiment。</span></div>
+              <div class="metric"><b>Wet reward 质量</b><span>90%+ 样本具备 metadata；包含 raw curve / raw image、QC flags、negative data、SOP version。</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resources" class="section dark" aria-labelledby="resource-title">
+        <div class="inner">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">08 · Resource Ask</p>
+              <h2 id="resource-title">所需资源支持</h2>
+            </div>
+            <p>
+              资源请求围绕最小闭环：团队、试点客户、wet-lab network、数据权利。
+            </p>
+          </div>
+
+          <div class="decision-grid">
+            <article class="decision">
+              <h3>核心团队</h3>
+              <ol>
+                <li>8-10 人：Agent、Memory、Review/Eval、Trajectory、蛋白设计、wet-lab interface。</li>
+                <li>2-3 位科学顾问 / expert reviewer。</li>
+                <li>1 位科研 workflow PM。</li>
+              </ol>
+            </article>
+            <article class="decision">
+              <h3>Wet-lab Reward Network</h3>
+              <ol>
+                <li>Pilot A：antibody / nanobody validation。</li>
+                <li>Pilot B：organoid / organ-chip phenotype reward。</li>
+                <li>候选伙伴：百英、金斯瑞、义翘、百普赛斯、KACTUS、冠科、Xellar、大橡、丹望。</li>
+              </ol>
+            </article>
+            <article class="decision">
+              <h3>数据与合作边界</h3>
+              <ol>
+                <li>必须拿到 raw data、negative data、metadata、SOP version、QC flags。</li>
+                <li>客户数据 no-training-by-default。</li>
+                <li>跨客户训练只在 opt-in 和脱敏条件下进行。</li>
+              </ol>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="decisions" class="section white" aria-labelledby="decisions-title">
+        <div class="inner">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">09 · To Discuss</p>
+              <h2 id="decisions-title">需要继续讨论的决策</h2>
+            </div>
+            <p>
+              这些会影响第一年销售、产品和资源配置，不适合在页面里假装已经完全确定。
+            </p>
+          </div>
+
+          <div class="asset-grid">
+            <article class="asset">
+              <h3>第一批客户优先级</h3>
+              <p>建议先找早中期 biotech / discovery group；大药企做 lighthouse pilot。需要你确认是否接受较窄 ICP。</p>
+            </article>
+            <article class="asset">
+              <h3>第一单包装</h3>
+              <p>建议卖 Target-to-Binder Sprint，而不是直接卖平台订阅。需要确认是否以 project-based revenue 作为第一年主口径。</p>
+            </article>
+            <article class="asset">
+              <h3>Wet reward 范围</h3>
+              <p>建议第一阶段覆盖 binding / expression / developability；phenotype reward 作为第二个 pilot 接入。</p>
+            </article>
+            <article class="asset">
+              <h3>数据权利默认值</h3>
+              <p>建议客户数据默认不训练；schema、rubric、workflow、匿名统计和授权数据用于平台改进。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
