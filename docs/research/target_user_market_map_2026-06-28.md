@@ -1,14 +1,14 @@
-# Frontis AI4Sci 目标用户清单与市场规模调研报告
+# AI4Sci 目标用户清单与市场规模调研报告
 
-**调研日期**：2026-06-28  
-**主题**：Frontis AI4Sci / Target-to-Binder Sprint / Candidate Decision Package 的目标用户、科研机构生态与市场规模  
+**调研日期**：2026-06-28
+**主题**：AI4Sci / Target-to-Binder Sprint / Candidate Decision Package 的目标用户、科研机构生态与市场规模
 **用途**：补充 `site/index.html` 中“目标用户”“资源请求”“市场机会”相关判断
 
 ---
 
 ## 0. Executive Summary
 
-Frontis AI4Sci 的第一批目标用户不应定义为泛科研人群，也不应从大药企总部级平台采购切入。更准确的 ICP 是：
+AI4Sci 的第一批目标用户不应定义为泛科研人群，也不应从大药企总部级平台采购切入。更准确的 ICP 是：
 
 > **已有明确 target / disease hypothesis / biologics candidate，需要在 8-12 周内完成 continue / kill / BD / next experiment 决策，但缺完整 AI + expert review + wet validation 闭环的 discovery team。**
 
@@ -28,7 +28,7 @@ Target-to-Binder Sprint
 2. **大药企和头部 biotech**：适合 lighthouse pilot，不适合作为最早期收入主线。
 3. **科研机构、医院、国家平台**：不应作为泛科研助手客户；主要角色是 clinical context、疾病机制、样本、结构生物学、类器官 / 器官芯片 reward、科学背书和 PI 孵化项目来源。
 4. **CRO、器官芯片、类器官、模型动物和 wet-lab 平台**：优先作为 reward source、执行伙伴和渠道伙伴，不要混入第一批直接客户。
-5. **市场规模**：Frontis 当前可切入的是全球约 **$1-3B** 的 AI-native discovery execution market，中国约 **$0.1-0.4B**；到 2031 年全球可达 **$5-14B**，中国 **$0.8-2.5B**；到 2036 年全球可达 **$14-40B**，中国 **$2.5-7.5B**。
+5. **市场规模**：本项目当前可切入的是全球约 **$1-3B** 的 AI-native discovery execution market，中国约 **$0.1-0.4B**；到 2031 年全球可达 **$5-14B**，中国 **$0.8-2.5B**；到 2036 年全球可达 **$14-40B**，中国 **$2.5-7.5B**。
 
 ---
 
@@ -261,7 +261,7 @@ HTML 里当前表述是：
 
 ### 4.3 C 类：AI-native / TechBio 标杆或合作方
 
-这类大多不是客户，而是竞品、合作方或估值参照物。Frontis 如果切入，最好卖“human disease biology + China wet validation + expert decision package”，而不是和它们正面拼模型。
+这类大多不是客户，而是竞品、合作方或估值参照物。本项目如果切入，最好卖“human disease biology + China wet validation + expert decision package”，而不是和它们正面拼模型。
 
 | 公司 | 判断 | 来源 |
 |---|---|---|
@@ -284,7 +284,7 @@ HTML 里当前表述是：
 
 ### 5.1 建议使用的市场口径
 
-不要直接引用整个 AI drug discovery 市场作为 Frontis 的市场规模。AI drug discovery 报告通常混合：
+不要直接引用整个 AI drug discovery 市场作为本项目的市场规模。AI drug discovery 报告通常混合：
 
 - target identification；
 - small molecule generation；
@@ -295,7 +295,7 @@ HTML 里当前表述是：
 - enterprise software；
 - service revenue。
 
-Frontis 第一阶段切的是更窄但更高价值的交叉市场：
+本项目第一阶段切的是更窄但更高价值的交叉市场：
 
 ```text
 AI discovery
@@ -373,7 +373,7 @@ AI discovery
 
 ### 5.6 投资人材料建议口径
 
-> Frontis 当前可切入的是全球约 **$1-3B** 的 AI-native discovery execution market，中国约 **$0.1-0.4B**。到 2031 年，随着 AI discovery、抗体 / 新模态和 wet validation network 成熟，全球 TAM 可达 **$5-14B**，中国 **$0.8-2.5B**。到 2036 年，若 Science Agent OS 成为 discovery team 的工作层，全球 TAM 可扩到 **$14-40B**，中国 **$2.5-7.5B**。
+> 本项目当前可切入的是全球约 **$1-3B** 的 AI-native discovery execution market，中国约 **$0.1-0.4B**。到 2031 年，随着 AI discovery、抗体 / 新模态和 wet validation network 成熟，全球 TAM 可达 **$5-14B**，中国 **$0.8-2.5B**。到 2036 年，若 Science Agent OS 成为 discovery team 的工作层，全球 TAM 可扩到 **$14-40B**，中国 **$2.5-7.5B**。
 
 ---
 
@@ -425,7 +425,7 @@ AI discovery
 
 1. 客户是否愿意把 early discovery 决策的一部分外包。
 2. 项目制 ASP 是否能稳定站住 80-500 万人民币。
-3. 客户是否接受 Frontis 作为项目空间和 evidence package 的组织者，而不是单纯 CRO 或模型供应商。
+3. 客户是否接受本项目作为项目空间和 evidence package 的组织者，而不是单纯 CRO 或模型供应商。
 4. 大客户是否坚持私有化 / VPC，导致早期交付成本过高。
 
 ### 7.2 数据与 IP 风险

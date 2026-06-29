@@ -1,14 +1,14 @@
 # AI4AI / AGI4Sci 头部创业公司资源预算与 HC 对标
 
-**调研日期**：2026-06-28  
-**用途**：为 `site/index.html` 中“所需资源支持”提供创业公司口径的预算、HC、算力、API、存储、科学软件、湿实验验证对标。  
+**调研日期**：2026-06-28
+**用途**：为 `site/index.html` 中“所需资源支持”提供创业公司口径的预算、HC、算力、API、存储、科学软件、湿实验验证对标。
 **口径说明**：公开资料很少披露单个部门预算。本文用头部 AI4AI / AGI4Sci / AI4Bio 创业公司的融资、团队规模、平台形态、实验设施和公开云价做推断。文中“事实”来自公开资料，“推断”为基于公开事实的预算判断。
 
 ---
 
 ## 0. Executive Summary
 
-不建议用字节、阿里、腾讯、京东等大厂 AI 基建预算直接对标 Frontis AI4AI / AI4Sci 第一阶段资源。大厂资本开支是集团级、云基础设施级，而当前更合适的参照是头部 AI4AI / AGI4Sci / AI4Bio 创业公司的第一年部门预算。
+不建议用字节、阿里、腾讯、京东等大厂 AI 基建预算直接对标 AI4AI / AI4Sci 第一阶段资源。大厂资本开支是集团级、云基础设施级，而当前更合适的参照是头部 AI4AI / AGI4Sci / AI4Bio 创业公司的第一年部门预算。
 
 推荐把第一年资源分成三档：
 
@@ -18,7 +18,7 @@
 | 标准档 | 头部创业公司第一年部门配置 | 约 1,500-4,500 万美元 | 20-35 FTE + 5-10 实习 | 40-80 H200 等效卡 / 月 | 160-320 H200 等效卡 / 月 | 适合 1-2 条真实项目闭环 + 1 个关键 ML benchmark |
 | 进取档 | 已有 3 亿美元级融资，承担自研模型 + wet-lab 闭环 | 约 6,000-17,000 万美元 | 50-90 FTE + 10-20 实习 | 160-320 H200 等效卡 / 月 | 512-1,024 H200 等效卡 / 月 | 接近 Lila / Periodic / Xaira 式重资产路径 |
 
-如果只按头部创业公司对标，Frontis 第一阶段可以采用标准档偏中位。但结合衔远当前更现实的组织节奏、客户验证和预算约束，页面默认建议采用 **5200 万元人民币 / 年验证版**：
+如果只按头部创业公司对标，本项目第一阶段可以采用标准档偏中位。但结合本项目当前更现实的组织节奏、客户验证和预算约束，页面默认建议采用 **5200 万元人民币 / 年验证版**：
 
 - 全职员工：6 FTE；
 - 实习生 / 访问学生：10-14 HC；
@@ -50,7 +50,7 @@
 
 | 公司 | 公开事实 | 团队 / 平台 / 闭环 | 对预算的含义 |
 |---|---|---|---|
-| EvolutionaryScale | 2024 年 seed 142M 美元；ESM3 为 98B 参数蛋白模型，训练量超过 1e24 FLOPS；LinkedIn 规模 11-50。来源：[ESM3](https://www.evolutionaryscale.ai/blog/esm3-release)、[Amazon](https://press.aboutamazon.com/aws/2024/6/evolutionaryscale-launches-with-esm3-a-milestone-ai-model-for-biology)、[LinkedIn](https://www.linkedin.com/company/evolutionaryscale) | 更像 frontier protein foundation model lab；公开信息未显示自营 wet-lab 闭环。2025 年团队加入 Biohub。来源：[Gunderson](https://www.gunder.com/en/news-insights/client-news/gunderson-client-evolutionaryscale-team-joins-biohub-in-strategic-transaction-with-chan-zuckerberg-initiative) | 说明纯模型团队可以很精干，但训练预算和云资源强度高。若 Frontis 不自训同级别 foundation model，不应直接按 EvolutionaryScale 算力上限配置。 |
+| EvolutionaryScale | 2024 年 seed 142M 美元；ESM3 为 98B 参数蛋白模型，训练量超过 1e24 FLOPS；LinkedIn 规模 11-50。来源：[ESM3](https://www.evolutionaryscale.ai/blog/esm3-release)、[Amazon](https://press.aboutamazon.com/aws/2024/6/evolutionaryscale-launches-with-esm3-a-milestone-ai-model-for-biology)、[LinkedIn](https://www.linkedin.com/company/evolutionaryscale) | 更像 frontier protein foundation model lab；公开信息未显示自营 wet-lab 闭环。2025 年团队加入 Biohub。来源：[Gunderson](https://www.gunder.com/en/news-insights/client-news/gunderson-client-evolutionaryscale-team-joins-biohub-in-strategic-transaction-with-chan-zuckerberg-initiative) | 说明纯模型团队可以很精干，但训练预算和云资源强度高。若本项目不自训同级别 foundation model，不应直接按 EvolutionaryScale 算力上限配置。 |
 | Xaira Therapeutics | 2024 年 launch，committed capital 超 1B 美元；LinkedIn 规模 51-200。来源：[BusinessWire](https://www.businesswire.com/news/home/20240423707240/en/Xaira-Therapeutics-Launches-to-Deliver-Transformative-Medicines-by-Advancing-and-Harnessing-AI-for-Drug-Discovery-and-Development)、[LinkedIn](https://www.linkedin.com/company/xaira-therapeutics) | AI-native integrated biotech，覆盖生物理解、分子设计、数据生成和 therapeutic development；2026 发布 X-Cell。来源：[Xaira approach](https://www.xaira.com/our-approach)、[X-Cell](https://www.businesswire.com/news/home/20260317710096/en/Xaira-Therapeutics-Launches-X-Cell-Its-First-Virtual-Cell-Model-Trained-on-the-Largest-Ever-Genome-Wide-Perturbation-Dataset-X-AtlasPisces) | 最高资本强度样本。若做模型 + 数据生成 + 实验 + 临床开发全栈，百人级团队也可能需要数亿美元预算。 |
 | Generate:Biomedicines | 2023 年 Series C 273M 美元，累计股权融资近 700M 美元；2026 年 IPO gross 400M 美元；公开摘要显示 2025 年末 312 employees。来源：[Generate Series C](https://generatebiomedicines.com/media-center/series-c-financing-announcement)、[Generate IPO](https://generatebiomedicines.com/media-center/generate-biomedicines-inc-announces-pricing-of-initial-public-offering)、[TradingView IPO summary](https://www.tradingview.com/news/tradingview%3A372d767ce01fc%3A0-generate-biomedicines-clinical-stage-generative-biology-company-designing-ai-engineered-protein-therapeutics-files-for-nasdaq-ipo/) | Chroma 蛋白生成模型；Generate Platform 采用 generate-build-measure-learn 闭环；Andover CryoEM lab 支撑结构数据回流。来源：[Chroma Nature](https://generatebiomedicines.com/media-center/generatebiomedicines-announces-publication-of-its-chroma-model-in-nature)、[CryoEM lab](https://generatebiomedicines.com/media-center/generatebiomedicines-unveils-state-of-the-art-cryoem-laboratory-to-accelerate-generative-ai-drug-discovery-and-development) | 成熟蛋白药物平台一旦进入临床后期，预算会向传统 biotech 靠拢。第一阶段不建议按 Generate 全公司规模配置。 |
 | Cradle | 2024 年 Series B 73M 美元，累计超过 100M 美元；LinkedIn 规模 51-200。来源：[Cradle Series B](https://www.cradle.bio/blog/series-b)、[LinkedIn](https://hr.linkedin.com/company/cradlebio) | AI-powered protein engineering platform，自营 Amsterdam wet lab，模型版本 A/B test，实验 turnaround 从数月缩到数周。来源：[Cradle Lab](https://www.cradle.bio/lab) | 适合作为中低资本强度参照：软件平台 + wet-lab 数据飞轮，但不承担临床管线全成本。 |
@@ -100,11 +100,11 @@
 
 ---
 
-## 5. 对 Frontis 第一阶段预算的建议
+## 5. 对本项目第一阶段预算的建议
 
 ### 5.1 推荐默认档
 
-建议采用 **衔远 5200 万元 / 年验证版**，而不是大厂部门级，也不是头部 AI4Sci 创业公司的重资产标准档。核心假设是：第一年先验证可收费项目闭环和关键 benchmark，不自训大型 foundation model，不自建自动化 wet-lab。
+建议采用 **5200 万元 / 年验证版**，而不是大厂部门级，也不是头部 AI4Sci 创业公司的重资产标准档。核心假设是：第一年先验证可收费项目闭环和关键 benchmark，不自训大型 foundation model，不自建自动化 wet-lab。
 
 | 资源项 | 推荐口径 |
 |---|---:|
@@ -134,7 +134,7 @@
 
 ### 5.2 为什么不是大厂部门口径
 
-国内外大厂 AI 基建投入是集团级、云级或基础设施级，不适合直接用于 Frontis 第一阶段部门预算。Frontis 当前更适合对标：
+国内外大厂 AI 基建投入是集团级、云级或基础设施级，不适合直接用于本项目第一阶段部门预算。本项目当前更适合对标：
 
 - Edison / FutureHouse：agent-first、轻资产、少量 wet lab；
 - Cradle：软件平台 + 自营 wet lab + 蛋白工程数据飞轮；
@@ -156,7 +156,7 @@
 
 当前页面建议不要写“大厂对标”，也不要默认写成 Lila / Periodic 那种重资产路线，而写：
 
-> 按衔远当前阶段，建议采用 5200 万元 / 年验证版：用小而完整的核心团队，配常态 64 张 H200，把第一年重点压到 1 条可收费项目闭环、1 个关键 ML benchmark 和必要的外部实验验证上。
+> 按本项目当前阶段，建议采用 5200 万元 / 年验证版：用小而完整的核心团队，配常态 64 张 H200，把第一年重点压到 1 条可收费项目闭环、1 个关键 ML benchmark 和必要的外部实验验证上。
 
 页面中的拆分可以写：
 

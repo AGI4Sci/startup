@@ -1,15 +1,15 @@
 # 中国湿实验 Reward Source 与合作伙伴地图
 
-**调研日期**：2026-06-28  
-**用途**：Frontis AI4Sci / Scientific MA 的 wet-lab partner map  
-**核心问题**：寻找可作为工具供应商、实验数据/reward 来源、潜在客户或合作伙伴的公司与机构，而不是寻找 AI 叙事最强的公司。  
+**调研日期**：2026-06-28
+**用途**：AI4Sci / Scientific MA 的 wet-lab partner map
+**核心问题**：寻找可作为工具供应商、实验数据/reward 来源、潜在客户或合作伙伴的公司与机构，而不是寻找 AI 叙事最强的公司。
 **结论口径**：本报告基于公开资料与 sub-agent 并行调研，重点评估“能否稳定产出高质量、可追溯、可训练的湿实验数据”。公开资料无法证明供应商愿意交付失败样本、原始曲线、完整元数据和模型训练权，因此这些条款必须通过试单和合同尽调确认。
 
 ---
 
 ## 0. Executive Summary
 
-Frontis 当前真正需要的是 **wet-lab reward network**，而不是再找一批 AI 模型公司。合作对象应按实验闭环拆成四类：
+本项目当前真正需要的是 **wet-lab reward network**，而不是再找一批 AI 模型公司。合作对象应按实验闭环拆成四类：
 
 1. **蛋白/抗体快速验证工厂**：把 AI 设计序列转成表达、纯化、binding、developability 和功能 readout。
 2. **标准 reagent 与 QC 供应商**：提供 target protein、抗原、FcR、MHC/TCR、膜蛋白、SPR/BLI assay 等可重复基线。
@@ -34,7 +34,7 @@ Frontis 当前真正需要的是 **wet-lab reward network**，而不是再找一
 - KD / kon / koff 原始曲线、表位分箱、竞争 binding、细胞功能读数；
 - 类器官/器官芯片原始图像、孔级 metadata、剂量反应曲线、IC50/AUC、毒理 biomarker、组学数据；
 - 阳性/阴性对照、失败样本、批次号、试剂/仪器/SOP 版本、复测规则；
-- Frontis 对数据、负样本和衍生模型的训练使用权。
+- 本项目对数据、负样本和衍生模型的训练使用权。
 
 ---
 
@@ -60,7 +60,7 @@ Frontis 当前真正需要的是 **wet-lab reward network**，而不是再找一
 1. 只交 PDF 报告，不交原始数据、处理后数据和 QC；
 2. 不交失败样本和阴性样本；
 3. 不记录 SOP 版本、批次号、试剂批号、仪器参数；
-4. 不允许 Frontis 将实验数据用于内部模型训练和评估；
+4. 不允许本项目将实验数据用于内部模型训练和评估；
 5. 人源样本没有清晰 IRB、知情同意、人遗和数据合规边界；
 6. 无法做盲测 pilot、跨批复测和固定对照。
 
@@ -180,7 +180,7 @@ Frontis 当前真正需要的是 **wet-lab reward network**，而不是再找一
 
 这些机构不一定适合做标准外包供应商，但适合共建高价值 reward 方法学、标准数据集或样本/结构平台。
 
-| 机构/团队 | 平台能力 | 可产出 readout | 适合 Frontis 的合作方式 | 潜在限制 |
+| 机构/团队 | 平台能力 | 可产出 readout | 适合本项目的合作方式 | 潜在限制 |
 |---|---|---|---|---|
 | **国家蛋白质科学研究（上海）设施** | 蛋白制备、晶体学、冷冻电镜、NMR、SAXS、质谱、动态结构、结构药筛 | 结构、结合模式、亲和力、MS/蛋白组、抗体-靶点机制 | 高质量结构和机制 reward；困难靶点结构解析 | 机时排队，样品质量要求高 |
 | **国家蛋白质科学中心（北京）/清华蛋白质研究技术中心** | 冷冻电镜、X-ray、蛋白制备、NMR、组学、计算、细胞功能 | cryo-EM map、结构模型、蛋白表达纯化、互作/功能数据 | 结构生物学方法学共建 | 更偏基础平台，转化药筛需另配团队 |
@@ -213,7 +213,7 @@ Frontis 当前真正需要的是 **wet-lab reward network**，而不是再找一
 
 ---
 
-## 5. 建议的 Frontis 合作架构
+## 5. 建议的本项目合作架构
 
 ### 5.1 不找单一全能供应商
 
@@ -243,7 +243,7 @@ Layer 6: Scientific Memory and training data
 
 #### Pilot A: Target-to-Binder wet validation
 
-目标：验证 Frontis 能否把 AI 设计候选转为可训练的 protein reward。
+目标：验证本项目能否把 AI 设计候选转为可训练的 protein reward。
 
 建议配置：
 
@@ -265,7 +265,7 @@ Layer 6: Scientific Memory and training data
 
 #### Pilot B: Phenotype / toxicity reward
 
-目标：验证 Frontis 能否把类器官/器官芯片结果编译成 phenotype reward。
+目标：验证本项目能否把类器官/器官芯片结果编译成 phenotype reward。
 
 建议配置：
 
@@ -337,8 +337,8 @@ Layer 6: Scientific Memory and training data
 ### 7.3 合规和 IP
 
 1. 人源样本的 IRB、知情同意、人遗合规、PIPL、数据出境和二次研究授权是否覆盖 AI 训练？
-2. Frontis 是否拥有内部模型训练权、负数据使用权、衍生 embedding 和 reward model 的权利？
-3. 供应商是否会横向使用 Frontis 的序列、候选物、实验数据或训练样本？
+2. 本项目是否拥有内部模型训练权、负数据使用权、衍生 embedding 和 reward model 的权利？
+3. 供应商是否会横向使用本项目的序列、候选物、实验数据或训练样本？
 4. 是否有靶点排他、用途限制、药物资产权属或里程碑条款？
 5. 是否支持 Agent 介入边界：Agent 生成实验建议，人类审批 SOP，湿实验过程全程记录。
 
@@ -384,7 +384,6 @@ Layer 6: Scientific Memory and training data
 
 前一份报告 `china_protein_design_and_organ_chip_landscape_2026-06-28.md` 关注的是“哪些公司在蛋白质设计或器官芯片赛道做得好”。本报告关注的是另一件事：
 
-> 谁能稳定、可审计、可复现地为 Frontis 产出实验数据和 reward。
+> 谁能稳定、可审计、可复现地为本项目产出实验数据和 reward。
 
-因此，很多 AI 能力强的公司在本报告中不是第一优先；很多传统 CRO、reagent 公司、高校医院平台反而更重要。对 Frontis 来说，它们的价值不是讲 AI，而是把真实湿实验世界变成可训练、可记录、可迭代的 Scientific Memory。
-
+因此，很多 AI 能力强的公司在本报告中不是第一优先；很多传统 CRO、reagent 公司、高校医院平台反而更重要。对本项目来说，它们的价值不是讲 AI，而是把真实湿实验世界变成可训练、可记录、可迭代的 Scientific Memory。

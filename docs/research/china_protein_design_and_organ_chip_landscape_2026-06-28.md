@@ -1,8 +1,8 @@
 # 中国蛋白质设计与器官芯片企业调研报告
 
-**调研日期**：2026-06-28  
-**用途**：AI4Sci / Scientific MA 方向的 related work 与产业参照  
-**调研对象**：中国国内及中国团队主导的蛋白质设计、AI 蛋白设计、器官芯片、类器官芯片、微生理系统相关企业  
+**调研日期**：2026-06-28
+**用途**：AI4Sci / Scientific MA 方向的 related work 与产业参照
+**调研对象**：中国国内及中国团队主导的蛋白质设计、AI 蛋白设计、器官芯片、类器官芯片、微生理系统相关企业
 **结论口径**：以下“龙头 / 准龙头”是基于公开资料、融资与合作、平台成熟度、产业落地和赛道纯度形成的判断，不等同于收入排名。
 
 ---
@@ -24,7 +24,7 @@
 - **耀速科技 Xellar Biosystems**：高通量器官芯片 + AI + 国际药企合作路线。
 - **丹望医疗 D1Med**：类器官模型库、药筛服务和类器官芯片融合路线。
 
-对 Frontis / AI4Sci 的启发是：单点蛋白设计模型和单点器官芯片平台都已有专业玩家，Frontis 更适合切入 **Science Agent Evolution Infrastructure**，把蛋白质设计与器官芯片作为真实任务场和 reward source，而不是从零复制某一家模型公司或湿实验平台。
+对本项目和 AI4Sci 的启发是：单点蛋白设计模型和单点器官芯片平台都已有专业玩家，本项目更适合切入 **Science Agent Evolution Infrastructure**，把蛋白质设计与器官芯片作为真实任务场和 reward source，而不是从零复制某一家模型公司或湿实验平台。
 
 ---
 
@@ -277,11 +277,11 @@
 
 ---
 
-## 6. 对 Frontis AI4Sci 的启发
+## 6. 对 AI4Sci 的启发
 
 ### 6.1 不建议直接复制的方向
 
-不建议把 Frontis 的 AI4Sci 第一阶段定义为：
+不建议把本项目的 AI4Sci 第一阶段定义为：
 
 1. 再做一个纯蛋白生成模型公司；
 2. 再做一个器官芯片湿实验平台；
@@ -291,9 +291,7 @@
 
 这些方向都有专业玩家，且需要大量实验、BD、监管、平台和行业积累。
 
-### 6.2 更适合 Frontis 的切入点
-
-Frontis 更适合切入 **Science Agent Evolution Infrastructure**：
+### 6.2 更适合本项目的切入点本项目更适合切入 **Science Agent Evolution Infrastructure**：
 
 ```text
 蛋白质设计公司
@@ -302,11 +300,11 @@ Frontis 更适合切入 **Science Agent Evolution Infrastructure**：
 器官芯片 / 类器官芯片公司
   提供人体相关 phenotype、toxicity、mechanism、safety reward
 
-Frontis AI4Sci
+AI4Sci
   连接目标调研、候选设计、专家 review、实验计划、结果解析、失败复盘和 Agent 训练
 ```
 
-也就是说，Frontis 可以把这些公司视为：
+也就是说，本项目可以把这些公司视为：
 
 - **潜在工具供应商**：调用其设计、筛选、模型或实验能力；
 - **潜在数据和 reward 来源**：把 wet-lab / organ-chip readout 编译成 reward vector；
@@ -325,7 +323,7 @@ Frontis AI4Sci
 6. 器官芯片或类器官芯片提供 phenotype / toxicity / mechanism reward；
 7. 将失败、专家判断和实验结果沉淀为 Scientific Memory 与训练样本。
 
-这个切入点可以绕开“和蛋白设计公司正面拼模型”以及“重资产自建器官芯片平台”的问题，把 Frontis 的核心壁垒落在科研任务编排、专家协作、轨迹数据、reward ledger 和 Agent 进化上。
+这个切入点可以绕开“和蛋白设计公司正面拼模型”以及“重资产自建器官芯片平台”的问题，把本项目的核心壁垒落在科研任务编排、专家协作、轨迹数据、reward ledger 和 Agent 进化上。
 
 ---
 
@@ -365,4 +363,3 @@ Frontis AI4Sci
 - 大橡科技：[器官芯片产品](https://www.daxiangbio.cn/organs-on-chips.html)、[药物研发服务](https://www.daxiangbio.cn/preclinical.html)、[公司新闻](https://www.daxiangbio.cn/news/199.html)、[36氪项目库](https://pitchhub.36kr.com/project/1678369341731840)
 - 耀速科技：[官网](https://xellarbio.com/)、[技术页](https://xellarbio.com/technology/)、[鼎泰集团](https://zh.tri-apex.com/info/news/headlines/655.html)、[证券时报](https://www.stcn.com/article/detail/1733756.html)、[奉贤政府](https://www.fengxian.gov.cn/gzms/20250624/91241.html)
 - 丹望医疗：[官网](https://www.d1med.com/)、[A 轮融资](https://d1med.com/show-23-7-1.html)、[学术成果](https://www.d1med.com/show-24-11-1.html)、[医药魔方](https://bydrug.pharmcube.com/news/detail/f90a4c3e711d07a87cfd9fdfc7fa76d9)
-

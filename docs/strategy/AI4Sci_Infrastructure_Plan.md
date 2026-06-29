@@ -1,8 +1,8 @@
 # AI4Sci 基础设施与自动化科研平台方案计划
 
-**版本**：v0.1  
-**定位**：AI4Sci 基础设施负责人视角  
-**目标场景**：AI4AI 底座 + 蛋白质设计 + 器官芯片闭环  
+**版本**：v0.1
+**定位**：AI4Sci 基础设施负责人视角
+**目标场景**：AI4AI 底座 + 蛋白质设计 + 器官芯片闭环
 **核心目标**：建设面向未来科学研究的基础设施，使科研过程能够被 AI 执行、记录、评价、训练和持续进化。
 
 ---
@@ -830,20 +830,20 @@ Agent Training
 
 ### MVP 1：Target-to-Binder Research Agent
 
-输入：一个 target。  
-输出：Target Card + 设计可行性报告 + top design strategy。  
+输入：一个 target。
+输出：Target Card + 设计可行性报告 + top design strategy。
 裁判：文献真实性、结构信息完整性、assay 可行性、专家 review。
 
 ### MVP 2：Protein Candidate Design & Review Loop
 
-输入：target structure + design constraints。  
-输出：top-k 候选 + 结构预测 + ranking + wet-lab plan。  
+输入：target structure + design constraints。
+输出：top-k 候选 + 结构预测 + ranking + wet-lab plan。
 裁判：结构 / developability verifier + 专家 reviewer + 小规模实验结果。
 
 ### MVP 3：Organ-chip Experiment Planner
 
-输入：候选蛋白 / perturbation + 假设。  
-输出：cell type、chip model、readout、control、dose、time point、统计方案。  
+输入：候选蛋白 / perturbation + 假设。
+输出：cell type、chip model、readout、control、dose、time point、统计方案。
 裁判：实验负责人 review + 实验执行结果 + 表型 reward。
 
 ---

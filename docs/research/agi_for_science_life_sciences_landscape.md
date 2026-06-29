@@ -1,7 +1,7 @@
 # AGI 加速生命科学发现公司图谱调研报告
 
-**调研日期**：2026-06-28  
-**主题**：AGI / Agentic AI / Foundation Models 加速科学发现，聚焦生命科学、药物发现、蛋白设计、自动化实验与科研智能体  
+**调研日期**：2026-06-28
+**主题**：AGI / Agentic AI / Foundation Models 加速科学发现，聚焦生命科学、药物发现、蛋白设计、自动化实验与科研智能体
 **用途**：作为 AI4Sci / Science Agent Evolution Infrastructure 的 related work 与市场参照
 
 ---
@@ -176,9 +176,9 @@ Google DeepMind、NVIDIA、Microsoft、OpenAI、Anthropic、AWS、Oracle、Datab
 
 ### 4.1 Isomorphic Labs
 
-**定位**：Alphabet / DeepMind 体系下的 AI-first 药物发现公司。  
-**技术路线**：将 AlphaFold 体系从蛋白结构预测扩展到多分子相互作用和药物设计，包括小分子、生物药、抗体、肽和分子胶等。  
-**商业验证**：与 Eli Lilly、Novartis、Johnson & Johnson 等药企开展合作。  
+**定位**：Alphabet / DeepMind 体系下的 AI-first 药物发现公司。
+**技术路线**：将 AlphaFold 体系从蛋白结构预测扩展到多分子相互作用和药物设计，包括小分子、生物药、抗体、肽和分子胶等。
+**商业验证**：与 Eli Lilly、Novartis、Johnson & Johnson 等药企开展合作。
 **判断**：它的优势是顶级模型、人才和 Alphabet 生态；短板是公开临床验证仍处早期。
 
 参考：
@@ -189,10 +189,10 @@ Google DeepMind、NVIDIA、Microsoft、OpenAI、Anthropic、AWS、Oracle、Datab
 
 ### 4.2 Recursion + Exscientia
 
-**定位**：上市 AI 药物发现平台，2024 年完成 Recursion 与 Exscientia 合并。  
-**技术路线**：Recursion OS、自动化高通量湿实验、表型组学、转录组 / 蛋白组 / ADME 数据、生成化学、BioHive 超算。  
-**商业验证**：Roche / Genentech、Sanofi、Bayer 等合作，拥有多个临床和临床前项目。  
-**风险提示**：上市公司披露显示仍处高投入阶段，且已有项目停项，说明 AI 药物发现仍受临床转化风险制约。  
+**定位**：上市 AI 药物发现平台，2024 年完成 Recursion 与 Exscientia 合并。
+**技术路线**：Recursion OS、自动化高通量湿实验、表型组学、转录组 / 蛋白组 / ADME 数据、生成化学、BioHive 超算。
+**商业验证**：Roche / Genentech、Sanofi、Bayer 等合作，拥有多个临床和临床前项目。
+**风险提示**：上市公司披露显示仍处高投入阶段，且已有项目停项，说明 AI 药物发现仍受临床转化风险制约。
 **判断**：Recursion 是“自动化实验 + 数据规模 + AI 平台 + 临床管线”路线的代表。
 
 参考：
@@ -202,9 +202,9 @@ Google DeepMind、NVIDIA、Microsoft、OpenAI、Anthropic、AWS、Oracle、Datab
 
 ### 4.3 Insilico Medicine
 
-**定位**：AI 药物发现代表公司，横跨靶点发现、分子生成、自动化实验与临床管线。  
-**技术路线**：PandaOmics 做靶点发现，Chemistry42 做生成化学，Pharma.AI 做平台化研发。  
-**商业验证**：rentosertib 在 IPF Phase 2a 中出现临床信号；与 Lilly、SK Biopharmaceuticals 等合作。  
+**定位**：AI 药物发现代表公司，横跨靶点发现、分子生成、自动化实验与临床管线。
+**技术路线**：PandaOmics 做靶点发现，Chemistry42 做生成化学，Pharma.AI 做平台化研发。
+**商业验证**：rentosertib 在 IPF Phase 2a 中出现临床信号；与 Lilly、SK Biopharmaceuticals 等合作。
 **判断**：它是少数能将“AI 发现 / AI 设计”与人体临床 PoC 关联起来讲清楚的公司之一。
 
 参考：
@@ -214,9 +214,9 @@ Google DeepMind、NVIDIA、Microsoft、OpenAI、Anthropic、AWS、Oracle、Datab
 
 ### 4.4 Generate:Biomedicines
 
-**定位**：生成式蛋白药公司。  
-**技术路线**：用生成式 AI 设计蛋白、抗体等治疗分子。  
-**商业验证**：GB-0895 是 AI-engineered long-acting anti-TSLP antibody，已启动全球 Phase 3 研究。  
+**定位**：生成式蛋白药公司。
+**技术路线**：用生成式 AI 设计蛋白、抗体等治疗分子。
+**商业验证**：GB-0895 是 AI-engineered long-acting anti-TSLP antibody，已启动全球 Phase 3 研究。
 **判断**：如果 GB-0895 进入后期临床并成功，将成为生成式生物学商业化的强验证。
 
 参考：
@@ -225,9 +225,9 @@ Google DeepMind、NVIDIA、Microsoft、OpenAI、Anthropic、AWS、Oracle、Datab
 
 ### 4.5 Lila Sciences
 
-**定位**：以 AI Science Factory 为核心叙事的科学超级智能公司。  
-**技术路线**：AI agent + 生物 / 化学 / 材料实验工厂 + 数据闭环。  
-**生命科学应用**：遗传药物、抗体、蛋白结合物、UTR、CAR-T 等。  
+**定位**：以 AI Science Factory 为核心叙事的科学超级智能公司。
+**技术路线**：AI agent + 生物 / 化学 / 材料实验工厂 + 数据闭环。
+**生命科学应用**：遗传药物、抗体、蛋白结合物、UTR、CAR-T 等。
 **判断**：Lila 是最值得关注的“AGI for science”新公司之一，因为它不只强调模型，而是强调物理实验闭环。
 
 参考：
@@ -237,9 +237,9 @@ Google DeepMind、NVIDIA、Microsoft、OpenAI、Anthropic、AWS、Oracle、Datab
 
 ### 4.6 FutureHouse / Edison Scientific
 
-**定位**：AI Scientist 和科研 Agent。  
-**技术路线**：面向文献检索、综述、假设生成、前人工作判断、化学实验规划等科研任务的多 Agent 系统。  
-**商业化**：FutureHouse 偏非营利研究，Edison Scientific 承接商业化部署。  
+**定位**：AI Scientist 和科研 Agent。
+**技术路线**：面向文献检索、综述、假设生成、前人工作判断、化学实验规划等科研任务的多 Agent 系统。
+**商业化**：FutureHouse 偏非营利研究，Edison Scientific 承接商业化部署。
 **判断**：代表“科研认知劳动自动化”路线，对 Science Agent OS 有直接参照价值。
 
 参考：
@@ -250,8 +250,8 @@ Google DeepMind、NVIDIA、Microsoft、OpenAI、Anthropic、AWS、Oracle、Datab
 
 ### 4.7 EvolutionaryScale
 
-**定位**：蛋白语言模型公司，由 Meta ESM 相关团队衍生。  
-**技术路线**：ESM3 同时建模蛋白序列、结构和功能，用于生成和设计新蛋白。  
+**定位**：蛋白语言模型公司，由 Meta ESM 相关团队衍生。
+**技术路线**：ESM3 同时建模蛋白序列、结构和功能，用于生成和设计新蛋白。
 **判断**：代表“生物基础模型公司”路线，不一定自己做完整药物管线，但可能成为生物设计的基础模型供应商。
 
 参考：
@@ -284,30 +284,30 @@ Google DeepMind、NVIDIA、Microsoft、OpenAI、Anthropic、AWS、Oracle、Datab
 
 ### 5.1 已经被验证的部分
 
-1. **药企愿意为 AI 平台付费**  
+1. **药企愿意为 AI 平台付费**
    Isomorphic、Schrodinger、Insilico、Valo、Absci、BigHat、Genesis、Terray 等公司都有大药企合作。
 
-2. **AI 发现 / 设计候选物可以进入临床**  
+2. **AI 发现 / 设计候选物可以进入临床**
    Insilico、Recursion、Schrodinger、Generate、Iambic 等已有临床阶段资产。
 
-3. **自动化实验和数据平台有独立价值**  
+3. **自动化实验和数据平台有独立价值**
    Emerald Cloud Lab、Strateos、Ginkgo、Synthace、Automata、Benchling、Tempus 等说明即使不拥有药物管线，实验 / 数据 / 工作流基础设施也有商业空间。
 
-4. **大模型正在进入药企组织流程**  
+4. **大模型正在进入药企组织流程**
    OpenAI、Anthropic、Microsoft、Google Cloud、AWS、Oracle、Veeva、Benchling 等都在将 agent / AI assistant 接入生命科学工作流。
 
 ### 5.2 仍未充分验证的部分
 
-1. **AI 是否显著提高 Phase 2 / Phase 3 成功率**  
+1. **AI 是否显著提高 Phase 2 / Phase 3 成功率**
    目前多数案例仍处早期临床或临床前阶段。
 
-2. **headline deal value 是否能转化为真实收入**  
+2. **headline deal value 是否能转化为真实收入**
    大额合作常包含大量后端里程碑，不能直接等同于现金收入。
 
-3. **平台是否能持续产出多个有效管线**  
+3. **平台是否能持续产出多个有效管线**
    单个 PoC 不等于平台可复制。
 
-4. **AI Scientist 是否能自主提出并完成高价值科学发现**  
+4. **AI Scientist 是否能自主提出并完成高价值科学发现**
    当前更多是辅助、编排、检索、设计和实验优化，还没有充分证明完全自主科学发现。
 
 ### 5.3 失败与风险
@@ -458,19 +458,19 @@ Target Card
 
 用户愿意把一部分任务外包，不是因为他们“不懂 AI”，而是因为要形成闭环需要跨越太多能力边界：
 
-1. **完整能力栈难以自建**  
+1. **完整能力栈难以自建**
    一个可用的 target-to-binder 闭环需要结构生物学、蛋白 / 抗体设计、AI 模型、assay、organ-chip、专家 review、项目管理和数据系统。早中期 biotech 很难全栈自建。
 
-2. **速度和资本效率更重要**  
+2. **速度和资本效率更重要**
    很多 biotech 的关键问题不是长期建设平台，而是 8-12 周内回答“这个 target 是否值得继续投钱”。外部闭环服务可以把固定成本变成项目成本。
 
-3. **外部专家网络有独立价值**  
+3. **外部专家网络有独立价值**
    内部团队容易被已有 hypothesis 锚定。外部 domain expert、结构专家、assay 专家、转化医学专家可以提供反驳、排序和 kill criteria。
 
-4. **human-relevant phenotype reward 稀缺**  
+4. **human-relevant phenotype reward 稀缺**
    许多团队可以做 binding assay，但缺更接近人体机制的 organ-chip / organoid / cell phenotype readout。这个 reward 对候选优先级判断很重要。
 
-5. **药企内部 AI 与外部平台并不互斥**  
+5. **药企内部 AI 与外部平台并不互斥**
    AstraZeneca 与 Absci、AbbVie 与 BigHat、Pfizer 与 Chai Discovery、Lilly TuneLab 等案例说明，大药企即使有内部 AI 团队，也会购买外部专业平台、模型或数据能力。
 
 ### 7.4 数据泄露顾虑与服务形态
@@ -556,19 +556,19 @@ Target Card
 
 ### 8.1 近期可落地机会
 
-1. **Target-to-Binder agent workflow**  
+1. **Target-to-Binder agent workflow**
    结合文献、数据库、结构预测、蛋白设计、专家 review 和 wet-lab plan。
 
-2. **Scientific Memory / Project State Graph**  
+2. **Scientific Memory / Project State Graph**
    做科研项目的 system of record，而不是聊天记录。
 
-3. **Experiment Planning and Review Agent**  
+3. **Experiment Planning and Review Agent**
    让 Agent 输出可执行实验计划，并由专家审批。
 
-4. **Reward Ledger**  
+4. **Reward Ledger**
    统一记录 computational score、expert score、wet-lab result 和 cost。
 
-5. **Trajectory Compiler**  
+5. **Trajectory Compiler**
    将每次科研任务编译为可训练样本，服务后续 SFT、preference learning、critique learning、offline RL。
 
 ### 8.2 不建议直接硬碰的区域
@@ -593,7 +593,7 @@ Target Card
 - 能接入专家 review；
 - 能产生实验 reward；
 - 能自然沉淀 trajectory 和 training data；
-- 与 Frontis 的 ME / WE / MA 组织智能框架一致。
+- 与本项目的 ME / WE / MA 组织智能框架一致。
 
 ---
 
@@ -626,16 +626,16 @@ Target Card
 
 ### 10.1 不应直接按大厂 AI 基建口径估算
 
-字节、阿里、腾讯、京东等大厂 AI 基建投入是集团级、云基础设施级，适合判断 AI 竞争的资本强度，但不适合直接作为 Frontis 第一阶段部门预算。更合适的参照是：
+字节、阿里、腾讯、京东等大厂 AI 基建投入是集团级、云基础设施级，适合判断 AI 竞争的资本强度，但不适合直接作为本项目第一阶段部门预算。更合适的参照是：
 
 - Lila Sciences、Periodic Labs：AI Scientist + 自主实验设施的重资产上限；
 - FutureHouse / Edison Scientific：agent-first、相对轻资产的 AI Scientist 路线；
 - EvolutionaryScale、Cradle、Generate、Xaira：生物基础模型、蛋白工程和 AI-native biotech 的不同资本强度；
 - 深势科技、晶泰科技、百图生科、英矽智能、剂泰科技：国内 AI4Sci / AI drug discovery 的融资、HC 和干湿闭环样本。
 
-### 10.2 衔远第一年预算建议
+### 10.2 本项目第一年预算建议
 
-结合衔远当前阶段，建议先采用 5200 万元人民币 / 年验证版，而不是直接上头部创业公司的重资产标准档。这个版本的目标是用小而完整的核心团队，配常态 64 张 H200，跑通 1 条可收费项目闭环、1 个关键 ML benchmark 和必要的外部实验验证，不在第一年自训大型 foundation model 或自建 wet-lab。
+结合本项目当前阶段，建议先采用 5200 万元人民币 / 年验证版，而不是直接上头部创业公司的重资产标准档。这个版本的目标是用小而完整的核心团队，配常态 64 张 H200，跑通 1 条可收费项目闭环、1 个关键 ML benchmark 和必要的外部实验验证，不在第一年自训大型 foundation model 或自建 wet-lab。
 
 | 资源项 | 推荐口径 |
 |---|---:|
@@ -654,7 +654,7 @@ Target Card
 ### 10.3 判断
 
 1. 如果只做科研 agent、项目工作区和少量 wet validation，保守档即可。
-2. 如果要同时验证 Target-to-Binder 闭环和一个关键 ML benchmark，5200 万元 / 年版本更符合衔远当前阶段。
+2. 如果要同时验证 Target-to-Binder 闭环和一个关键 ML benchmark，5200 万元 / 年版本更符合本项目当前阶段。
 3. 如果付费项目、数据飞轮和实验回流都成立，再升级到 8000 万-1.5 亿元 / 年的标准档。
 4. 如果要自训大型生命科学 foundation model、自建自动化实验平台或多项目 wet-lab 并行，应进入进取档。
 5. 预算不能只看 GPU。头部公司共同特征是：专有数据、实验反馈、专家评审、自动化或半自动化 wet-lab 网络、BD / IP / 合规能力共同构成壁垒。
