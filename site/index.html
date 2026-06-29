@@ -17,8 +17,8 @@
         <a href="#goal">目标</a>
         <a href="#users">伙伴</a>
         <a href="#projects">递进</a>
-        <a href="#positioning">定位</a>
         <a href="#architecture">能力</a>
+        <a href="#sci-validation">Sci验证</a>
         <a href="#roadmap">计划</a>
         <a href="#resources">资源</a>
         <a href="#company-value">价值</a>
@@ -221,48 +221,11 @@
         </div>
       </section>
 
-      <section id="positioning" class="section white" aria-labelledby="positioning-title">
-        <div class="inner">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">04 · Positioning</p>
-              <h2 id="positioning-title">竞争定位</h2>
-            </div>
-            <p>本项目的关键不是在 AI4AI 和 AGI4Sci 之间二选一，而是把两者合成一个飞轮：AI4AI 让系统持续自我进化，AGI4Sci 的分子设计与器官芯片反馈提供治疗癌症等疾病所需的真实 reward。
-            </p>
-          </div>
-
-          <div class="positioning-chart" aria-label="AI4AI 与 AGI4Sci 竞争定位图">
-            <div class="axis-note">纵轴：单次任务执行 → 可训练环境 / 递归进化；横轴：通用任务工具 → 科学 / 实验 reward 闭环</div>
-            <div class="quadrant q1">
-              <b>AI 自我迭代实验室</b>
-              <span>Ineffable、Recursive、Prime Intellect、Deeptune</span>
-              <p>强 RL、强环境和训练基础设施，但通常不绑定具体疾病治疗反馈。</p>
-            </div>
-            <div class="quadrant q2">
-              <b>目标位置</b>
-              <span>AI4AI 自我进化底座 × AGI4Sci 疾病治疗真实反馈</span>
-              <p>分子设计、肿瘤 biologics 和器官芯片结果回流到底座，让科研 Agent 越做越会做。</p>
-            </div>
-            <div class="quadrant q3">
-              <b>通用 Agent / Coding 工具</b>
-              <span>Copilot、Claude Code、Cursor、Devin</span>
-              <p>执行效率强，但缺少科学假设、实验结果和疾病场景 reward。</p>
-            </div>
-            <div class="quadrant q4">
-              <b>垂直 AI4Sci / AI 制药模型</b>
-              <span>Cradle、Deep Potential、BioMap、MoleculeMind</span>
-              <p>领域能力强，但容易绑定单一模型或 pipeline，底座复用性需要额外建设。</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section id="architecture" class="section alt" aria-labelledby="architecture-title">
         <div class="inner">
           <div class="section-heading">
             <div>
-              <p class="eyebrow">05 · Core Capabilities</p>
+              <p class="eyebrow">04 · Core Capabilities</p>
               <h2 id="architecture-title">AI4AI 核心能力</h2>
             </div>
             <p>
@@ -325,6 +288,138 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sci-validation" class="section white" aria-labelledby="sci-validation-title">
+        <div class="inner">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">05 · Sci Validation</p>
+              <h2 id="sci-validation-title">Sci 验证体系</h2>
+            </div>
+            <p>
+              Sci 项目不是单次外包实验，而是分层 reward 环境。先用计算和高通量实验降低候选数量，再把少数候选送入类器官、肿瘤切片和器官芯片，形成可回流的训练与评测数据。
+            </p>
+          </div>
+
+          <div class="strategy-grid">
+            <article class="strategy">
+              <span class="tag">Principle</span>
+              <h3>低成本层负责探索</h3>
+              <p>计算数据、构型预筛和 2D 功能实验负责快速发现明显不合格的候选，让昂贵实验只服务少数高价值问题。</p>
+              <ul>
+                <li><b>目标：</b>把几百到几千个候选压缩到几十个。</li>
+                <li><b>数据：</b>靶点表达、候选构型、基础杀伤、细胞因子和正常细胞安全信号。</li>
+                <li><b>回流：</b>形成早期 reward 模型和下一轮实验优先级。</li>
+              </ul>
+            </article>
+
+            <article class="strategy">
+              <span class="tag">Translational</span>
+              <h3>中间层负责临床相关性</h3>
+              <p>多 donor、肿瘤微环境压力、患者来源类器官和肿瘤切片，用来判断候选是否只在简单培养皿里好看。</p>
+              <ul>
+                <li><b>目标：</b>识别 donor 变异、微环境失效、空间浸润不足和患者样本差异。</li>
+                <li><b>数据：</b>扩增、耗竭、低氧/TGF-β/CAF/TAM 压力、3D 浸润和残余克隆。</li>
+                <li><b>回流：</b>校准早期 killing、cytokine 和 TME reward 权重。</li>
+              </ul>
+            </article>
+
+            <article class="strategy">
+              <span class="tag">Risk</span>
+              <h3>高保真层负责去风险</h3>
+              <p>器官芯片不是主筛选平台，而是少数候选的 IND 前风险测试，重点看器官环境、动态暴露和安全窗。</p>
+              <ul>
+                <li><b>目标：</b>回答是否存在肝毒性、内皮激活、巨噬细胞炎症放大和剂量窗过窄。</li>
+                <li><b>数据：</b>肝细胞、胆管、肝内皮、Kupffer/巨噬细胞、灌流芯片和剂量暴露读数。</li>
+                <li><b>回流：</b>形成 go/no-go 依据和高保真安全 reward。</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="resource-note">
+            <h3>层次化验证漏斗</h3>
+            <p>
+              这张表用于定义每层在 Sci 项目里的作用、通量、时间成本和计算替代空间。原则是：能计算预筛的先计算，必须湿实验确认的再实验，越往后候选越少、保真度越高。
+            </p>
+            <table class="budget-table">
+              <thead>
+                <tr>
+                  <th>层级</th>
+                  <th>作用</th>
+                  <th>典型通量 / 时间</th>
+                  <th>湿实验属性</th>
+                  <th>回流到 AI4AI 的资产</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>L0 计算与患者数据</td>
+                  <td>判断靶点、疾病人群和正常组织风险是否值得投入。</td>
+                  <td>10³-10⁵ 个假设；数天到 2 周。</td>
+                  <td>主要可计算，少量病理或表达验证。</td>
+                  <td>靶点风险图谱、患者分层、正常组织风险清单。</td>
+                </tr>
+                <tr>
+                  <td>L1 候选结构设计</td>
+                  <td>从大量分子或细胞治疗构型中排除明显不合格设计。</td>
+                  <td>10²-10⁴ 个构型 / 轮；1-3 周。</td>
+                  <td>可大量计算预筛，但表达和自发激活必须实验确认。</td>
+                  <td>构型特征、预筛排序、失败构型样本。</td>
+                </tr>
+                <tr>
+                  <td>L2 2D 功能筛选</td>
+                  <td>测基础杀伤、结合、激活、细胞因子和正常细胞安全窗口。</td>
+                  <td>30-300 个候选 / 轮；1-2 周。</td>
+                  <td>必须湿实验，计算用于选点和预测曲线。</td>
+                  <td>早期 reward、剂量/时间曲线、cytokine 风险标签。</td>
+                </tr>
+                <tr>
+                  <td>L3 多 donor / 制造鲁棒性</td>
+                  <td>判断候选是否跨 donor 稳定、可制造、不过早耗竭。</td>
+                  <td>5-30 个候选 × 6-20 donor；3-6 周。</td>
+                  <td>必须湿实验，计算用于批次异常预警和 donor 风险预测。</td>
+                  <td>制造成功率、donor 变异、产品质量标签。</td>
+                </tr>
+                <tr>
+                  <td>L4 肿瘤微环境压力测试</td>
+                  <td>测试低氧、TGF-β、CAF/TAM、基质屏障等压力下是否仍有效。</td>
+                  <td>5-20 个候选 × 4-10 条件；2-4 周。</td>
+                  <td>必须湿实验，计算用于挑选最有信息量的压力条件。</td>
+                  <td>失效机制、增强模块需求、TME reward。</td>
+                </tr>
+                <tr>
+                  <td>L5 类器官 / 肿瘤切片</td>
+                  <td>验证患者来源 3D 肿瘤里的空间浸润、杀伤和残余克隆。</td>
+                  <td>3-10 个候选 × 5-30 样本；2-8 周。</td>
+                  <td>必须湿实验，计算主要用于图像分析和患者响应分群。</td>
+                  <td>空间杀伤图、患者异质性、残余克隆风险。</td>
+                </tr>
+                <tr>
+                  <td>L6 肝安全 / 器官芯片</td>
+                  <td>对 1-5 个候选做器官级安全去风险和剂量窗判断。</td>
+                  <td>1-5 个候选 × 10-100 条件；4-12 周。</td>
+                  <td>必须湿实验，计算用于剂量窗建模和风险排序。</td>
+                  <td>IND 前 go/no-go、肝毒性/内皮/巨噬细胞安全 reward。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="strategy-grid boundary-grid">
+            <article class="strategy">
+              <span class="tag">Organoid</span>
+              <h3>类器官负责“像患者肿瘤”</h3>
+              <p>类器官和肿瘤切片更适合看候选能不能进入真实 3D 肿瘤结构、是否覆盖患者异质性、治疗后是否留下低表达残余克隆。</p>
+            </article>
+
+            <article class="strategy">
+              <span class="tag">Chip</span>
+              <h3>器官芯片负责“像器官环境”</h3>
+              <p>器官芯片更适合看血流/灌流、内皮屏障、肝脏免疫细胞、动态暴露和安全剂量窗。它不替代类器官，而是在少数候选上做高保真去风险。</p>
+            </article>
           </div>
         </div>
       </section>
