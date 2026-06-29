@@ -865,6 +865,74 @@ h3 {
   font-weight: 800;
 }
 
+.positioning-chart {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: auto repeat(2, minmax(210px, 1fr));
+  gap: 12px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgba(21, 132, 95, 0.06), rgba(27, 127, 145, 0.1)),
+    var(--paper);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.axis-note {
+  grid-column: 1 / -1;
+  padding: 12px 14px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+  border: 1px solid var(--blue-line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.quadrant {
+  position: relative;
+  z-index: 1;
+  min-height: 210px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--ink);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.74);
+}
+
+.quadrant b {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+
+.quadrant span {
+  display: block;
+  max-width: 360px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.quadrant p {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.q1 { border-top-color: var(--gold); }
+.q2 {
+  border-color: rgba(21, 132, 95, 0.5);
+  border-top-color: var(--green);
+  background: #fff;
+  box-shadow: 0 18px 40px rgba(21, 132, 95, 0.12);
+}
+.q3 { border-top-color: var(--cyan); }
+.q4 { border-top-color: var(--coral); }
+
 .roadmap {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1094,6 +1162,25 @@ h3 {
   min-width: 900px;
 }
 
+.benchmark-table {
+  min-width: 1040px;
+}
+
+.benchmark-table td:first-child {
+  min-width: 180px;
+}
+
+.benchmark-table td:nth-child(2) {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.benchmark-table td:last-child {
+  color: var(--muted);
+  font-weight: 400;
+  white-space: normal;
+}
+
 .value-table td:nth-child(3),
 .value-table td:nth-child(4) {
   color: var(--ink);
@@ -1221,8 +1308,24 @@ h3 {
   .value-strip,
   .project-flow,
   .feedback-loop,
-  .asset-strip {
+  .asset-strip,
+  .positioning-chart {
     grid-template-columns: 1fr;
+  }
+
+  .positioning-chart {
+    display: grid;
+    grid-template-rows: none;
+    gap: 12px;
+    min-height: auto;
+    padding: 18px;
+  }
+
+  .quadrant {
+    min-height: auto;
+    padding: 16px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
   }
 
   .evolution-ring {
